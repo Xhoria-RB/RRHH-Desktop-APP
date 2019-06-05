@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RRHHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Candidatos">
+          <Key>
+            <PropertyRef Name="IdCandidato" />
+          </Key>
+          <Property Name="IdCandidato" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdPersona_Candidatos" Type="int" Nullable="false" />
+          <Property Name="PuestoAspirado_Candidatos" Type="int" />
+          <Property Name="SalarioAspirado_Candidatos" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Recomendacion_Candidatos" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Estado_Candidatos" Type="bit" />
+        </EntityType>
+        <EntityType Name="Capacitaciones">
+          <Key>
+            <PropertyRef Name="IdCapacitacion" />
+          </Key>
+          <Property Name="IdCapacitacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Descripcion_Capacitaciones" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Nivel_Capacitaciones" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="FechaDesde_Capacitaciones" Type="datetime" Nullable="false" />
+          <Property Name="FechaHasta_Capacitaciones" Type="datetime" Nullable="false" />
+          <Property Name="Institucion_Capacitaciones" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Competencias">
+          <Key>
+            <PropertyRef Name="IdCompetencia" />
+          </Key>
+          <Property Name="IdCompetencia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Descripcion_Competencias" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Estado_Competencias" Type="bit" />
+        </EntityType>
+        <EntityType Name="Departamentos">
+          <Key>
+            <PropertyRef Name="IdDepartamento" />
+          </Key>
+          <Property Name="IdDepartamento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Descripcion_Departamentos" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Estado_Departamentos" Type="bit" />
+        </EntityType>
+        <EntityType Name="Empleados">
+          <Key>
+            <PropertyRef Name="IdEmpleado" />
+          </Key>
+          <Property Name="IdEmpleado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdPersona_Empleados" Type="int" Nullable="false" />
+          <Property Name="FechaIngreso_Empleados" Type="datetime" Nullable="false" />
+          <Property Name="IdPuesto_Empleados" Type="int" Nullable="false" />
+          <Property Name="Salario_Empleados" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Estado_Empleados" Type="bit" />
+        </EntityType>
+        <EntityType Name="ExpLaborales">
+          <Key>
+            <PropertyRef Name="IdExpLaboral" />
+          </Key>
+          <Property Name="IdExpLaboral" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdPersona_ExpLaboral" Type="int" Nullable="false" />
+          <Property Name="Empresa_ExpLaborales" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PuestoOcupado_ExpLaborales" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FechaDesde_ExpLaborales" Type="datetime" Nullable="false" />
+          <Property Name="FechaHasta_ExpLaborales" Type="datetime" Nullable="false" />
+          <Property Name="Salario_ExpLaborales" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Idiomas">
+          <Key>
+            <PropertyRef Name="IdIdioma" />
+          </Key>
+          <Property Name="IdIdioma" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre_Idiomas" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Estado_Idiomas" Type="bit" />
+        </EntityType>
+        <EntityType Name="Personas">
+          <Key>
+            <PropertyRef Name="IdPersona" />
+          </Key>
+          <Property Name="IdPersona" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre_Personas" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Apellido_Personas" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Cedula_Personas" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Sexo_Personas" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="Puestos">
+          <Key>
+            <PropertyRef Name="IdPuesto" />
+          </Key>
+          <Property Name="IdPuesto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre_Puestos" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="IdDepartamento_Puestos" Type="int" />
+          <Property Name="NivelRiesgo_Puestos" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="SalarioMinimo_Puestos" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="SalarioMaximo_Puestos" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Estado_Puestos" Type="bit" />
+        </EntityType>
+        <EntityType Name="REL_Capacitaciones_Candidatos">
+          <Key>
+            <PropertyRef Name="IdCandidato_Rel_Capacitaciones_Candidatos" />
+            <PropertyRef Name="IdCapacitacion_Rel_Capacitaciones_Candidatos" />
+          </Key>
+          <Property Name="IdRel_Capacitaciones_Candidatos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdCandidato_Rel_Capacitaciones_Candidatos" Type="int" Nullable="false" />
+          <Property Name="IdCapacitacion_Rel_Capacitaciones_Candidatos" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="REL_Competencias_Candidatos">
+          <Key>
+            <PropertyRef Name="IdCandidato_Rel_Competencias_Candidatos" />
+            <PropertyRef Name="IdCompetencia_Rel_Competencias_Candidatos" />
+          </Key>
+          <Property Name="IdRel_Competencias_Candidatos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdCandidato_Rel_Competencias_Candidatos" Type="int" Nullable="false" />
+          <Property Name="IdCompetencia_Rel_Competencias_Candidatos" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="REL_Idioma_Candidatos">
+          <Key>
+            <PropertyRef Name="IdCandidato_Rel_Idioma_Candidatos" />
+            <PropertyRef Name="IdIdioma_Rel_Idioma_Candidatos" />
+          </Key>
+          <Property Name="IdRel_Idiomas_Candidatos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdCandidato_Rel_Idioma_Candidatos" Type="int" Nullable="false" />
+          <Property Name="IdIdioma_Rel_Idioma_Candidatos" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email_Usuarios" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Contrasena_Usuarios" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="NombreUsuario_Usuarios" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="IdPersona_Usuarios" Type="int" Nullable="false" />
+          <Property Name="Roles_Usuarios" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Candidato__IdPer__00DF2177">
+          <End Role="Personas" Type="Self.Personas" Multiplicity="1" />
+          <End Role="Candidatos" Type="Self.Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personas">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="Candidatos">
+              <PropertyRef Name="IdPersona_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Candidato__Puest__01D345B0">
+          <End Role="Puestos" Type="Self.Puestos" Multiplicity="0..1" />
+          <End Role="Candidatos" Type="Self.Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Puestos">
+              <PropertyRef Name="IdPuesto" />
+            </Principal>
+            <Dependent Role="Candidatos">
+              <PropertyRef Name="PuestoAspirado_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Empleados__IdPer__0880433F">
+          <End Role="Personas" Type="Self.Personas" Multiplicity="1" />
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personas">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="Empleados">
+              <PropertyRef Name="IdPersona_Empleados" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Empleados__IdPue__09746778">
+          <End Role="Puestos" Type="Self.Puestos" Multiplicity="1" />
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Puestos">
+              <PropertyRef Name="IdPuesto" />
+            </Principal>
+            <Dependent Role="Empleados">
+              <PropertyRef Name="IdPuesto_Empleados" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ExpLabora__IdPer__05A3D694">
+          <End Role="Personas" Type="Self.Personas" Multiplicity="1" />
+          <End Role="ExpLaborales" Type="Self.ExpLaborales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personas">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="ExpLaborales">
+              <PropertyRef Name="IdPersona_ExpLaboral" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Puestos__IdDepar__793DFFAF">
+          <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="0..1" />
+          <End Role="Puestos" Type="Self.Puestos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamentos">
+              <PropertyRef Name="IdDepartamento" />
+            </Principal>
+            <Dependent Role="Puestos">
+              <PropertyRef Name="IdDepartamento_Puestos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Capac__IdCan__11158940">
+          <End Role="Candidatos" Type="Self.Candidatos" Multiplicity="1" />
+          <End Role="REL_Capacitaciones_Candidatos" Type="Self.REL_Capacitaciones_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Candidatos">
+              <PropertyRef Name="IdCandidato" />
+            </Principal>
+            <Dependent Role="REL_Capacitaciones_Candidatos">
+              <PropertyRef Name="IdCandidato_Rel_Capacitaciones_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Capac__IdCap__1209AD79">
+          <End Role="Capacitaciones" Type="Self.Capacitaciones" Multiplicity="1" />
+          <End Role="REL_Capacitaciones_Candidatos" Type="Self.REL_Capacitaciones_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Capacitaciones">
+              <PropertyRef Name="IdCapacitacion" />
+            </Principal>
+            <Dependent Role="REL_Capacitaciones_Candidatos">
+              <PropertyRef Name="IdCapacitacion_Rel_Capacitaciones_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Compe__IdCan__0D44F85C">
+          <End Role="Candidatos" Type="Self.Candidatos" Multiplicity="1" />
+          <End Role="REL_Competencias_Candidatos" Type="Self.REL_Competencias_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Candidatos">
+              <PropertyRef Name="IdCandidato" />
+            </Principal>
+            <Dependent Role="REL_Competencias_Candidatos">
+              <PropertyRef Name="IdCandidato_Rel_Competencias_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Compe__IdCom__0E391C95">
+          <End Role="Competencias" Type="Self.Competencias" Multiplicity="1" />
+          <End Role="REL_Competencias_Candidatos" Type="Self.REL_Competencias_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Competencias">
+              <PropertyRef Name="IdCompetencia" />
+            </Principal>
+            <Dependent Role="REL_Competencias_Candidatos">
+              <PropertyRef Name="IdCompetencia_Rel_Competencias_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Idiom__IdCan__2EA5EC27">
+          <End Role="Candidatos" Type="Self.Candidatos" Multiplicity="1" />
+          <End Role="REL_Idioma_Candidatos" Type="Self.REL_Idioma_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Candidatos">
+              <PropertyRef Name="IdCandidato" />
+            </Principal>
+            <Dependent Role="REL_Idioma_Candidatos">
+              <PropertyRef Name="IdCandidato_Rel_Idioma_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Idiom__IdIdi__2F9A1060">
+          <End Role="Idiomas" Type="Self.Idiomas" Multiplicity="1" />
+          <End Role="REL_Idioma_Candidatos" Type="Self.REL_Idioma_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Idiomas">
+              <PropertyRef Name="IdIdioma" />
+            </Principal>
+            <Dependent Role="REL_Idioma_Candidatos">
+              <PropertyRef Name="IdIdioma_Rel_Idioma_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Usuarios__IdPers__18B6AB08">
+          <End Role="Personas" Type="Self.Personas" Multiplicity="1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personas">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="IdPersona_Usuarios" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="RRHHModelStoreContainer">
+          <EntitySet Name="Candidatos" EntityType="Self.Candidatos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Capacitaciones" EntityType="Self.Capacitaciones" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Competencias" EntityType="Self.Competencias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Departamentos" EntityType="Self.Departamentos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExpLaborales" EntityType="Self.ExpLaborales" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Idiomas" EntityType="Self.Idiomas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Personas" EntityType="Self.Personas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Puestos" EntityType="Self.Puestos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="REL_Capacitaciones_Candidatos" EntityType="Self.REL_Capacitaciones_Candidatos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="REL_Competencias_Candidatos" EntityType="Self.REL_Competencias_Candidatos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="REL_Idioma_Candidatos" EntityType="Self.REL_Idioma_Candidatos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Candidato__IdPer__00DF2177" Association="Self.FK__Candidato__IdPer__00DF2177">
+            <End Role="Personas" EntitySet="Personas" />
+            <End Role="Candidatos" EntitySet="Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Candidato__Puest__01D345B0" Association="Self.FK__Candidato__Puest__01D345B0">
+            <End Role="Puestos" EntitySet="Puestos" />
+            <End Role="Candidatos" EntitySet="Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Empleados__IdPer__0880433F" Association="Self.FK__Empleados__IdPer__0880433F">
+            <End Role="Personas" EntitySet="Personas" />
+            <End Role="Empleados" EntitySet="Empleados" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Empleados__IdPue__09746778" Association="Self.FK__Empleados__IdPue__09746778">
+            <End Role="Puestos" EntitySet="Puestos" />
+            <End Role="Empleados" EntitySet="Empleados" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ExpLabora__IdPer__05A3D694" Association="Self.FK__ExpLabora__IdPer__05A3D694">
+            <End Role="Personas" EntitySet="Personas" />
+            <End Role="ExpLaborales" EntitySet="ExpLaborales" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Puestos__IdDepar__793DFFAF" Association="Self.FK__Puestos__IdDepar__793DFFAF">
+            <End Role="Departamentos" EntitySet="Departamentos" />
+            <End Role="Puestos" EntitySet="Puestos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Capac__IdCan__11158940" Association="Self.FK__REL_Capac__IdCan__11158940">
+            <End Role="Candidatos" EntitySet="Candidatos" />
+            <End Role="REL_Capacitaciones_Candidatos" EntitySet="REL_Capacitaciones_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Capac__IdCap__1209AD79" Association="Self.FK__REL_Capac__IdCap__1209AD79">
+            <End Role="Capacitaciones" EntitySet="Capacitaciones" />
+            <End Role="REL_Capacitaciones_Candidatos" EntitySet="REL_Capacitaciones_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Compe__IdCan__0D44F85C" Association="Self.FK__REL_Compe__IdCan__0D44F85C">
+            <End Role="Candidatos" EntitySet="Candidatos" />
+            <End Role="REL_Competencias_Candidatos" EntitySet="REL_Competencias_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Compe__IdCom__0E391C95" Association="Self.FK__REL_Compe__IdCom__0E391C95">
+            <End Role="Competencias" EntitySet="Competencias" />
+            <End Role="REL_Competencias_Candidatos" EntitySet="REL_Competencias_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Idiom__IdCan__2EA5EC27" Association="Self.FK__REL_Idiom__IdCan__2EA5EC27">
+            <End Role="Candidatos" EntitySet="Candidatos" />
+            <End Role="REL_Idioma_Candidatos" EntitySet="REL_Idioma_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Idiom__IdIdi__2F9A1060" Association="Self.FK__REL_Idiom__IdIdi__2F9A1060">
+            <End Role="Idiomas" EntitySet="Idiomas" />
+            <End Role="REL_Idioma_Candidatos" EntitySet="REL_Idioma_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Usuarios__IdPers__18B6AB08" Association="Self.FK__Usuarios__IdPers__18B6AB08">
+            <End Role="Personas" EntitySet="Personas" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RRHHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Candidatos">
+          <Key>
+            <PropertyRef Name="IdCandidato" />
+          </Key>
+          <Property Name="IdCandidato" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdPersona_Candidatos" Type="Int32" Nullable="false" />
+          <Property Name="PuestoAspirado_Candidatos" Type="Int32" />
+          <Property Name="SalarioAspirado_Candidatos" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Recomendacion_Candidatos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Estado_Candidatos" Type="Boolean" />
+          <NavigationProperty Name="Personas" Relationship="Self.FK__Candidato__IdPer__00DF2177" FromRole="Candidatos" ToRole="Personas" />
+          <NavigationProperty Name="Puestos" Relationship="Self.FK__Candidato__Puest__01D345B0" FromRole="Candidatos" ToRole="Puestos" />
+          <NavigationProperty Name="REL_Capacitaciones_Candidatos" Relationship="Self.FK__REL_Capac__IdCan__11158940" FromRole="Candidatos" ToRole="REL_Capacitaciones_Candidatos" />
+          <NavigationProperty Name="REL_Competencias_Candidatos" Relationship="Self.FK__REL_Compe__IdCan__0D44F85C" FromRole="Candidatos" ToRole="REL_Competencias_Candidatos" />
+          <NavigationProperty Name="REL_Idioma_Candidatos" Relationship="Self.FK__REL_Idiom__IdCan__2EA5EC27" FromRole="Candidatos" ToRole="REL_Idioma_Candidatos" />
+        </EntityType>
+        <EntityType Name="Capacitaciones">
+          <Key>
+            <PropertyRef Name="IdCapacitacion" />
+          </Key>
+          <Property Name="IdCapacitacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Descripcion_Capacitaciones" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Nivel_Capacitaciones" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FechaDesde_Capacitaciones" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaHasta_Capacitaciones" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Institucion_Capacitaciones" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="REL_Capacitaciones_Candidatos" Relationship="Self.FK__REL_Capac__IdCap__1209AD79" FromRole="Capacitaciones" ToRole="REL_Capacitaciones_Candidatos" />
+        </EntityType>
+        <EntityType Name="Competencias">
+          <Key>
+            <PropertyRef Name="IdCompetencia" />
+          </Key>
+          <Property Name="IdCompetencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Descripcion_Competencias" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Estado_Competencias" Type="Boolean" />
+          <NavigationProperty Name="REL_Competencias_Candidatos" Relationship="Self.FK__REL_Compe__IdCom__0E391C95" FromRole="Competencias" ToRole="REL_Competencias_Candidatos" />
+        </EntityType>
+        <EntityType Name="Departamentos">
+          <Key>
+            <PropertyRef Name="IdDepartamento" />
+          </Key>
+          <Property Name="IdDepartamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Descripcion_Departamentos" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Estado_Departamentos" Type="Boolean" />
+          <NavigationProperty Name="Puestos" Relationship="Self.FK__Puestos__IdDepar__793DFFAF" FromRole="Departamentos" ToRole="Puestos" />
+        </EntityType>
+        <EntityType Name="Empleados">
+          <Key>
+            <PropertyRef Name="IdEmpleado" />
+          </Key>
+          <Property Name="IdEmpleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdPersona_Empleados" Type="Int32" Nullable="false" />
+          <Property Name="FechaIngreso_Empleados" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IdPuesto_Empleados" Type="Int32" Nullable="false" />
+          <Property Name="Salario_Empleados" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Estado_Empleados" Type="Boolean" />
+          <NavigationProperty Name="Personas" Relationship="Self.FK__Empleados__IdPer__0880433F" FromRole="Empleados" ToRole="Personas" />
+          <NavigationProperty Name="Puestos" Relationship="Self.FK__Empleados__IdPue__09746778" FromRole="Empleados" ToRole="Puestos" />
+        </EntityType>
+        <EntityType Name="ExpLaborales">
+          <Key>
+            <PropertyRef Name="IdExpLaboral" />
+          </Key>
+          <Property Name="IdExpLaboral" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdPersona_ExpLaboral" Type="Int32" Nullable="false" />
+          <Property Name="Empresa_ExpLaborales" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PuestoOcupado_ExpLaborales" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FechaDesde_ExpLaborales" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaHasta_ExpLaborales" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Salario_ExpLaborales" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Personas" Relationship="Self.FK__ExpLabora__IdPer__05A3D694" FromRole="ExpLaborales" ToRole="Personas" />
+        </EntityType>
+        <EntityType Name="Idiomas">
+          <Key>
+            <PropertyRef Name="IdIdioma" />
+          </Key>
+          <Property Name="IdIdioma" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Idiomas" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Estado_Idiomas" Type="Boolean" />
+          <NavigationProperty Name="REL_Idioma_Candidatos" Relationship="Self.FK__REL_Idiom__IdIdi__2F9A1060" FromRole="Idiomas" ToRole="REL_Idioma_Candidatos" />
+        </EntityType>
+        <EntityType Name="Personas">
+          <Key>
+            <PropertyRef Name="IdPersona" />
+          </Key>
+          <Property Name="IdPersona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Personas" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Apellido_Personas" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Cedula_Personas" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sexo_Personas" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="Candidatos" Relationship="Self.FK__Candidato__IdPer__00DF2177" FromRole="Personas" ToRole="Candidatos" />
+          <NavigationProperty Name="Empleados" Relationship="Self.FK__Empleados__IdPer__0880433F" FromRole="Personas" ToRole="Empleados" />
+          <NavigationProperty Name="ExpLaborales" Relationship="Self.FK__ExpLabora__IdPer__05A3D694" FromRole="Personas" ToRole="ExpLaborales" />
+          <NavigationProperty Name="Usuarios" Relationship="Self.FK__Usuarios__IdPers__18B6AB08" FromRole="Personas" ToRole="Usuarios" />
+        </EntityType>
+        <EntityType Name="Puestos">
+          <Key>
+            <PropertyRef Name="IdPuesto" />
+          </Key>
+          <Property Name="IdPuesto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Puestos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IdDepartamento_Puestos" Type="Int32" />
+          <Property Name="NivelRiesgo_Puestos" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SalarioMinimo_Puestos" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="SalarioMaximo_Puestos" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Estado_Puestos" Type="Boolean" />
+          <NavigationProperty Name="Candidatos" Relationship="Self.FK__Candidato__Puest__01D345B0" FromRole="Puestos" ToRole="Candidatos" />
+          <NavigationProperty Name="Departamentos" Relationship="Self.FK__Puestos__IdDepar__793DFFAF" FromRole="Puestos" ToRole="Departamentos" />
+          <NavigationProperty Name="Empleados" Relationship="Self.FK__Empleados__IdPue__09746778" FromRole="Puestos" ToRole="Empleados" />
+        </EntityType>
+        <EntityType Name="REL_Capacitaciones_Candidatos">
+          <Key>
+            <PropertyRef Name="IdCandidato_Rel_Capacitaciones_Candidatos" />
+            <PropertyRef Name="IdCapacitacion_Rel_Capacitaciones_Candidatos" />
+          </Key>
+          <Property Name="IdRel_Capacitaciones_Candidatos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdCandidato_Rel_Capacitaciones_Candidatos" Type="Int32" Nullable="false" />
+          <Property Name="IdCapacitacion_Rel_Capacitaciones_Candidatos" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Candidatos" Relationship="Self.FK__REL_Capac__IdCan__11158940" FromRole="REL_Capacitaciones_Candidatos" ToRole="Candidatos" />
+          <NavigationProperty Name="Capacitaciones" Relationship="Self.FK__REL_Capac__IdCap__1209AD79" FromRole="REL_Capacitaciones_Candidatos" ToRole="Capacitaciones" />
+        </EntityType>
+        <EntityType Name="REL_Competencias_Candidatos">
+          <Key>
+            <PropertyRef Name="IdCandidato_Rel_Competencias_Candidatos" />
+            <PropertyRef Name="IdCompetencia_Rel_Competencias_Candidatos" />
+          </Key>
+          <Property Name="IdRel_Competencias_Candidatos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdCandidato_Rel_Competencias_Candidatos" Type="Int32" Nullable="false" />
+          <Property Name="IdCompetencia_Rel_Competencias_Candidatos" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Candidatos" Relationship="Self.FK__REL_Compe__IdCan__0D44F85C" FromRole="REL_Competencias_Candidatos" ToRole="Candidatos" />
+          <NavigationProperty Name="Competencias" Relationship="Self.FK__REL_Compe__IdCom__0E391C95" FromRole="REL_Competencias_Candidatos" ToRole="Competencias" />
+        </EntityType>
+        <EntityType Name="REL_Idioma_Candidatos">
+          <Key>
+            <PropertyRef Name="IdCandidato_Rel_Idioma_Candidatos" />
+            <PropertyRef Name="IdIdioma_Rel_Idioma_Candidatos" />
+          </Key>
+          <Property Name="IdRel_Idiomas_Candidatos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdCandidato_Rel_Idioma_Candidatos" Type="Int32" Nullable="false" />
+          <Property Name="IdIdioma_Rel_Idioma_Candidatos" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Candidatos" Relationship="Self.FK__REL_Idiom__IdCan__2EA5EC27" FromRole="REL_Idioma_Candidatos" ToRole="Candidatos" />
+          <NavigationProperty Name="Idiomas" Relationship="Self.FK__REL_Idiom__IdIdi__2F9A1060" FromRole="REL_Idioma_Candidatos" ToRole="Idiomas" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email_Usuarios" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Contrasena_Usuarios" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NombreUsuario_Usuarios" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IdPersona_Usuarios" Type="Int32" Nullable="false" />
+          <Property Name="Roles_Usuarios" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Personas" Relationship="Self.FK__Usuarios__IdPers__18B6AB08" FromRole="Usuarios" ToRole="Personas" />
+        </EntityType>
+        <Association Name="FK__Candidato__IdPer__00DF2177">
+          <End Role="Personas" Type="Self.Personas" Multiplicity="1" />
+          <End Role="Candidatos" Type="Self.Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personas">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="Candidatos">
+              <PropertyRef Name="IdPersona_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Candidato__Puest__01D345B0">
+          <End Role="Puestos" Type="Self.Puestos" Multiplicity="0..1" />
+          <End Role="Candidatos" Type="Self.Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Puestos">
+              <PropertyRef Name="IdPuesto" />
+            </Principal>
+            <Dependent Role="Candidatos">
+              <PropertyRef Name="PuestoAspirado_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Capac__IdCan__11158940">
+          <End Role="Candidatos" Type="Self.Candidatos" Multiplicity="1" />
+          <End Role="REL_Capacitaciones_Candidatos" Type="Self.REL_Capacitaciones_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Candidatos">
+              <PropertyRef Name="IdCandidato" />
+            </Principal>
+            <Dependent Role="REL_Capacitaciones_Candidatos">
+              <PropertyRef Name="IdCandidato_Rel_Capacitaciones_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Compe__IdCan__0D44F85C">
+          <End Role="Candidatos" Type="Self.Candidatos" Multiplicity="1" />
+          <End Role="REL_Competencias_Candidatos" Type="Self.REL_Competencias_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Candidatos">
+              <PropertyRef Name="IdCandidato" />
+            </Principal>
+            <Dependent Role="REL_Competencias_Candidatos">
+              <PropertyRef Name="IdCandidato_Rel_Competencias_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Idiom__IdCan__2EA5EC27">
+          <End Role="Candidatos" Type="Self.Candidatos" Multiplicity="1" />
+          <End Role="REL_Idioma_Candidatos" Type="Self.REL_Idioma_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Candidatos">
+              <PropertyRef Name="IdCandidato" />
+            </Principal>
+            <Dependent Role="REL_Idioma_Candidatos">
+              <PropertyRef Name="IdCandidato_Rel_Idioma_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Capac__IdCap__1209AD79">
+          <End Role="Capacitaciones" Type="Self.Capacitaciones" Multiplicity="1" />
+          <End Role="REL_Capacitaciones_Candidatos" Type="Self.REL_Capacitaciones_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Capacitaciones">
+              <PropertyRef Name="IdCapacitacion" />
+            </Principal>
+            <Dependent Role="REL_Capacitaciones_Candidatos">
+              <PropertyRef Name="IdCapacitacion_Rel_Capacitaciones_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Compe__IdCom__0E391C95">
+          <End Role="Competencias" Type="Self.Competencias" Multiplicity="1" />
+          <End Role="REL_Competencias_Candidatos" Type="Self.REL_Competencias_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Competencias">
+              <PropertyRef Name="IdCompetencia" />
+            </Principal>
+            <Dependent Role="REL_Competencias_Candidatos">
+              <PropertyRef Name="IdCompetencia_Rel_Competencias_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Puestos__IdDepar__793DFFAF">
+          <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="0..1" />
+          <End Role="Puestos" Type="Self.Puestos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamentos">
+              <PropertyRef Name="IdDepartamento" />
+            </Principal>
+            <Dependent Role="Puestos">
+              <PropertyRef Name="IdDepartamento_Puestos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Empleados__IdPer__0880433F">
+          <End Role="Personas" Type="Self.Personas" Multiplicity="1" />
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personas">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="Empleados">
+              <PropertyRef Name="IdPersona_Empleados" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Empleados__IdPue__09746778">
+          <End Role="Puestos" Type="Self.Puestos" Multiplicity="1" />
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Puestos">
+              <PropertyRef Name="IdPuesto" />
+            </Principal>
+            <Dependent Role="Empleados">
+              <PropertyRef Name="IdPuesto_Empleados" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ExpLabora__IdPer__05A3D694">
+          <End Role="Personas" Type="Self.Personas" Multiplicity="1" />
+          <End Role="ExpLaborales" Type="Self.ExpLaborales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personas">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="ExpLaborales">
+              <PropertyRef Name="IdPersona_ExpLaboral" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__REL_Idiom__IdIdi__2F9A1060">
+          <End Role="Idiomas" Type="Self.Idiomas" Multiplicity="1" />
+          <End Role="REL_Idioma_Candidatos" Type="Self.REL_Idioma_Candidatos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Idiomas">
+              <PropertyRef Name="IdIdioma" />
+            </Principal>
+            <Dependent Role="REL_Idioma_Candidatos">
+              <PropertyRef Name="IdIdioma_Rel_Idioma_Candidatos" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Usuarios__IdPers__18B6AB08">
+          <End Role="Personas" Type="Self.Personas" Multiplicity="1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personas">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="IdPersona_Usuarios" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="RRHHEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Candidatos" EntityType="Self.Candidatos" />
+          <EntitySet Name="Capacitaciones" EntityType="Self.Capacitaciones" />
+          <EntitySet Name="Competencias" EntityType="Self.Competencias" />
+          <EntitySet Name="Departamentos" EntityType="Self.Departamentos" />
+          <EntitySet Name="Empleados" EntityType="Self.Empleados" />
+          <EntitySet Name="ExpLaborales" EntityType="Self.ExpLaborales" />
+          <EntitySet Name="Idiomas" EntityType="Self.Idiomas" />
+          <EntitySet Name="Personas" EntityType="Self.Personas" />
+          <EntitySet Name="Puestos" EntityType="Self.Puestos" />
+          <EntitySet Name="REL_Capacitaciones_Candidatos" EntityType="Self.REL_Capacitaciones_Candidatos" />
+          <EntitySet Name="REL_Competencias_Candidatos" EntityType="Self.REL_Competencias_Candidatos" />
+          <EntitySet Name="REL_Idioma_Candidatos" EntityType="Self.REL_Idioma_Candidatos" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+          <AssociationSet Name="FK__Candidato__IdPer__00DF2177" Association="Self.FK__Candidato__IdPer__00DF2177">
+            <End Role="Personas" EntitySet="Personas" />
+            <End Role="Candidatos" EntitySet="Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Candidato__Puest__01D345B0" Association="Self.FK__Candidato__Puest__01D345B0">
+            <End Role="Puestos" EntitySet="Puestos" />
+            <End Role="Candidatos" EntitySet="Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Capac__IdCan__11158940" Association="Self.FK__REL_Capac__IdCan__11158940">
+            <End Role="Candidatos" EntitySet="Candidatos" />
+            <End Role="REL_Capacitaciones_Candidatos" EntitySet="REL_Capacitaciones_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Compe__IdCan__0D44F85C" Association="Self.FK__REL_Compe__IdCan__0D44F85C">
+            <End Role="Candidatos" EntitySet="Candidatos" />
+            <End Role="REL_Competencias_Candidatos" EntitySet="REL_Competencias_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Idiom__IdCan__2EA5EC27" Association="Self.FK__REL_Idiom__IdCan__2EA5EC27">
+            <End Role="Candidatos" EntitySet="Candidatos" />
+            <End Role="REL_Idioma_Candidatos" EntitySet="REL_Idioma_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Capac__IdCap__1209AD79" Association="Self.FK__REL_Capac__IdCap__1209AD79">
+            <End Role="Capacitaciones" EntitySet="Capacitaciones" />
+            <End Role="REL_Capacitaciones_Candidatos" EntitySet="REL_Capacitaciones_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Compe__IdCom__0E391C95" Association="Self.FK__REL_Compe__IdCom__0E391C95">
+            <End Role="Competencias" EntitySet="Competencias" />
+            <End Role="REL_Competencias_Candidatos" EntitySet="REL_Competencias_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Puestos__IdDepar__793DFFAF" Association="Self.FK__Puestos__IdDepar__793DFFAF">
+            <End Role="Departamentos" EntitySet="Departamentos" />
+            <End Role="Puestos" EntitySet="Puestos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Empleados__IdPer__0880433F" Association="Self.FK__Empleados__IdPer__0880433F">
+            <End Role="Personas" EntitySet="Personas" />
+            <End Role="Empleados" EntitySet="Empleados" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Empleados__IdPue__09746778" Association="Self.FK__Empleados__IdPue__09746778">
+            <End Role="Puestos" EntitySet="Puestos" />
+            <End Role="Empleados" EntitySet="Empleados" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ExpLabora__IdPer__05A3D694" Association="Self.FK__ExpLabora__IdPer__05A3D694">
+            <End Role="Personas" EntitySet="Personas" />
+            <End Role="ExpLaborales" EntitySet="ExpLaborales" />
+          </AssociationSet>
+          <AssociationSet Name="FK__REL_Idiom__IdIdi__2F9A1060" Association="Self.FK__REL_Idiom__IdIdi__2F9A1060">
+            <End Role="Idiomas" EntitySet="Idiomas" />
+            <End Role="REL_Idioma_Candidatos" EntitySet="REL_Idioma_Candidatos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Usuarios__IdPers__18B6AB08" Association="Self.FK__Usuarios__IdPers__18B6AB08">
+            <End Role="Personas" EntitySet="Personas" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RRHHModelStoreContainer" CdmEntityContainer="RRHHEntities">
+          <EntitySetMapping Name="Candidatos">
+            <EntityTypeMapping TypeName="RRHHModel.Candidatos">
+              <MappingFragment StoreEntitySet="Candidatos">
+                <ScalarProperty Name="IdCandidato" ColumnName="IdCandidato" />
+                <ScalarProperty Name="IdPersona_Candidatos" ColumnName="IdPersona_Candidatos" />
+                <ScalarProperty Name="PuestoAspirado_Candidatos" ColumnName="PuestoAspirado_Candidatos" />
+                <ScalarProperty Name="SalarioAspirado_Candidatos" ColumnName="SalarioAspirado_Candidatos" />
+                <ScalarProperty Name="Recomendacion_Candidatos" ColumnName="Recomendacion_Candidatos" />
+                <ScalarProperty Name="Estado_Candidatos" ColumnName="Estado_Candidatos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Capacitaciones">
+            <EntityTypeMapping TypeName="RRHHModel.Capacitaciones">
+              <MappingFragment StoreEntitySet="Capacitaciones">
+                <ScalarProperty Name="IdCapacitacion" ColumnName="IdCapacitacion" />
+                <ScalarProperty Name="Descripcion_Capacitaciones" ColumnName="Descripcion_Capacitaciones" />
+                <ScalarProperty Name="Nivel_Capacitaciones" ColumnName="Nivel_Capacitaciones" />
+                <ScalarProperty Name="FechaDesde_Capacitaciones" ColumnName="FechaDesde_Capacitaciones" />
+                <ScalarProperty Name="FechaHasta_Capacitaciones" ColumnName="FechaHasta_Capacitaciones" />
+                <ScalarProperty Name="Institucion_Capacitaciones" ColumnName="Institucion_Capacitaciones" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Competencias">
+            <EntityTypeMapping TypeName="RRHHModel.Competencias">
+              <MappingFragment StoreEntitySet="Competencias">
+                <ScalarProperty Name="IdCompetencia" ColumnName="IdCompetencia" />
+                <ScalarProperty Name="Descripcion_Competencias" ColumnName="Descripcion_Competencias" />
+                <ScalarProperty Name="Estado_Competencias" ColumnName="Estado_Competencias" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departamentos">
+            <EntityTypeMapping TypeName="RRHHModel.Departamentos">
+              <MappingFragment StoreEntitySet="Departamentos">
+                <ScalarProperty Name="IdDepartamento" ColumnName="IdDepartamento" />
+                <ScalarProperty Name="Descripcion_Departamentos" ColumnName="Descripcion_Departamentos" />
+                <ScalarProperty Name="Estado_Departamentos" ColumnName="Estado_Departamentos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empleados">
+            <EntityTypeMapping TypeName="RRHHModel.Empleados">
+              <MappingFragment StoreEntitySet="Empleados">
+                <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+                <ScalarProperty Name="IdPersona_Empleados" ColumnName="IdPersona_Empleados" />
+                <ScalarProperty Name="FechaIngreso_Empleados" ColumnName="FechaIngreso_Empleados" />
+                <ScalarProperty Name="IdPuesto_Empleados" ColumnName="IdPuesto_Empleados" />
+                <ScalarProperty Name="Salario_Empleados" ColumnName="Salario_Empleados" />
+                <ScalarProperty Name="Estado_Empleados" ColumnName="Estado_Empleados" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExpLaborales">
+            <EntityTypeMapping TypeName="RRHHModel.ExpLaborales">
+              <MappingFragment StoreEntitySet="ExpLaborales">
+                <ScalarProperty Name="IdExpLaboral" ColumnName="IdExpLaboral" />
+                <ScalarProperty Name="IdPersona_ExpLaboral" ColumnName="IdPersona_ExpLaboral" />
+                <ScalarProperty Name="Empresa_ExpLaborales" ColumnName="Empresa_ExpLaborales" />
+                <ScalarProperty Name="PuestoOcupado_ExpLaborales" ColumnName="PuestoOcupado_ExpLaborales" />
+                <ScalarProperty Name="FechaDesde_ExpLaborales" ColumnName="FechaDesde_ExpLaborales" />
+                <ScalarProperty Name="FechaHasta_ExpLaborales" ColumnName="FechaHasta_ExpLaborales" />
+                <ScalarProperty Name="Salario_ExpLaborales" ColumnName="Salario_ExpLaborales" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Idiomas">
+            <EntityTypeMapping TypeName="RRHHModel.Idiomas">
+              <MappingFragment StoreEntitySet="Idiomas">
+                <ScalarProperty Name="IdIdioma" ColumnName="IdIdioma" />
+                <ScalarProperty Name="Nombre_Idiomas" ColumnName="Nombre_Idiomas" />
+                <ScalarProperty Name="Estado_Idiomas" ColumnName="Estado_Idiomas" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Personas">
+            <EntityTypeMapping TypeName="RRHHModel.Personas">
+              <MappingFragment StoreEntitySet="Personas">
+                <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+                <ScalarProperty Name="Nombre_Personas" ColumnName="Nombre_Personas" />
+                <ScalarProperty Name="Apellido_Personas" ColumnName="Apellido_Personas" />
+                <ScalarProperty Name="Cedula_Personas" ColumnName="Cedula_Personas" />
+                <ScalarProperty Name="Sexo_Personas" ColumnName="Sexo_Personas" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Puestos">
+            <EntityTypeMapping TypeName="RRHHModel.Puestos">
+              <MappingFragment StoreEntitySet="Puestos">
+                <ScalarProperty Name="IdPuesto" ColumnName="IdPuesto" />
+                <ScalarProperty Name="Nombre_Puestos" ColumnName="Nombre_Puestos" />
+                <ScalarProperty Name="IdDepartamento_Puestos" ColumnName="IdDepartamento_Puestos" />
+                <ScalarProperty Name="NivelRiesgo_Puestos" ColumnName="NivelRiesgo_Puestos" />
+                <ScalarProperty Name="SalarioMinimo_Puestos" ColumnName="SalarioMinimo_Puestos" />
+                <ScalarProperty Name="SalarioMaximo_Puestos" ColumnName="SalarioMaximo_Puestos" />
+                <ScalarProperty Name="Estado_Puestos" ColumnName="Estado_Puestos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REL_Capacitaciones_Candidatos">
+            <EntityTypeMapping TypeName="RRHHModel.REL_Capacitaciones_Candidatos">
+              <MappingFragment StoreEntitySet="REL_Capacitaciones_Candidatos">
+                <ScalarProperty Name="IdRel_Capacitaciones_Candidatos" ColumnName="IdRel_Capacitaciones_Candidatos" />
+                <ScalarProperty Name="IdCandidato_Rel_Capacitaciones_Candidatos" ColumnName="IdCandidato_Rel_Capacitaciones_Candidatos" />
+                <ScalarProperty Name="IdCapacitacion_Rel_Capacitaciones_Candidatos" ColumnName="IdCapacitacion_Rel_Capacitaciones_Candidatos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REL_Competencias_Candidatos">
+            <EntityTypeMapping TypeName="RRHHModel.REL_Competencias_Candidatos">
+              <MappingFragment StoreEntitySet="REL_Competencias_Candidatos">
+                <ScalarProperty Name="IdRel_Competencias_Candidatos" ColumnName="IdRel_Competencias_Candidatos" />
+                <ScalarProperty Name="IdCandidato_Rel_Competencias_Candidatos" ColumnName="IdCandidato_Rel_Competencias_Candidatos" />
+                <ScalarProperty Name="IdCompetencia_Rel_Competencias_Candidatos" ColumnName="IdCompetencia_Rel_Competencias_Candidatos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REL_Idioma_Candidatos">
+            <EntityTypeMapping TypeName="RRHHModel.REL_Idioma_Candidatos">
+              <MappingFragment StoreEntitySet="REL_Idioma_Candidatos">
+                <ScalarProperty Name="IdRel_Idiomas_Candidatos" ColumnName="IdRel_Idiomas_Candidatos" />
+                <ScalarProperty Name="IdCandidato_Rel_Idioma_Candidatos" ColumnName="IdCandidato_Rel_Idioma_Candidatos" />
+                <ScalarProperty Name="IdIdioma_Rel_Idioma_Candidatos" ColumnName="IdIdioma_Rel_Idioma_Candidatos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="RRHHModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="RRHHModel.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+                <ScalarProperty Name="Email_Usuarios" ColumnName="Email_Usuarios" />
+                <ScalarProperty Name="Contrasena_Usuarios" ColumnName="Contrasena_Usuarios" />
+                <ScalarProperty Name="NombreUsuario_Usuarios" ColumnName="NombreUsuario_Usuarios" />
+                <ScalarProperty Name="IdPersona_Usuarios" ColumnName="IdPersona_Usuarios" />
+                <ScalarProperty Name="Roles_Usuarios" ColumnName="Roles_Usuarios" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

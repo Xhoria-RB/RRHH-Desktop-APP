@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74F4AD68-2DAB-491B-A26D-52932D3ED540}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RRHHProyectoFinal</RootNamespace>
+    <AssemblyName>RRHHProyectoFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=3.1.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.3.1.3\lib\net452\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Candidatos.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitaciones.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Competencias.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExpLaborales.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarCapacitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarCapacitaciones.Designer.cs">
+      <DependentUpon>FrmAgregarCapacitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarCompetencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarCompetencias.Designer.cs">
+      <DependentUpon>FrmAgregarCompetencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarDepartamentos.Designer.cs">
+      <DependentUpon>FrmAgregarDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarExpLaboral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarExpLaboral.Designer.cs">
+      <DependentUpon>FrmAgregarExpLaboral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarIdiomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarIdiomas.Designer.cs">
+      <DependentUpon>FrmAgregarIdiomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarPuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarPuestos.Designer.cs">
+      <DependentUpon>FrmAgregarPuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDetallesCandidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDetallesCandidato.Designer.cs">
+      <DependentUpon>FrmDetallesCandidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionCapacitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionCapacitaciones.Designer.cs">
+      <DependentUpon>FrmGestionCapacitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionCompetencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionCompetencias.Designer.cs">
+      <DependentUpon>FrmGestionCompetencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionDepartamento.Designer.cs">
+      <DependentUpon>FrmGestionDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionExpLaboral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionExpLaboral.Designer.cs">
+      <DependentUpon>FrmGestionExpLaboral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionIdiomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionIdiomas.Designer.cs">
+      <DependentUpon>FrmGestionIdiomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionPuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionPuestos.Designer.cs">
+      <DependentUpon>FrmGestionPuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInicioCandidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicioCandidato.Designer.cs">
+      <DependentUpon>FrmInicioCandidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInicioRRHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicioRRHH.Designer.cs">
+      <DependentUpon>FrmInicioRRHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoCandidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoCandidato.Designer.cs">
+      <DependentUpon>FrmNuevoCandidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarse.Designer.cs">
+      <DependentUpon>FrmRegistrarse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeleccionCandidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeleccionCandidato.Designer.cs">
+      <DependentUpon>FrmSeleccionCandidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Idiomas.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personas.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puestos.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REL_Capacitaciones_Candidatos.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REL_Competencias_Candidatos.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="REL_Idioma_Candidatos.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RRHHDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RRHHDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RRHHModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RRHHModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RRHHModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RRHHModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RRHHModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <DependentUpon>RRHHModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades.cs" />
+    <EmbeddedResource Include="FrmAgregarCapacitaciones.resx">
+      <DependentUpon>FrmAgregarCapacitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarCompetencias.resx">
+      <DependentUpon>FrmAgregarCompetencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarDepartamentos.resx">
+      <DependentUpon>FrmAgregarDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarExpLaboral.resx">
+      <DependentUpon>FrmAgregarExpLaboral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarIdiomas.resx">
+      <DependentUpon>FrmAgregarIdiomas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarPuestos.resx">
+      <DependentUpon>FrmAgregarPuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDetallesCandidato.resx">
+      <DependentUpon>FrmDetallesCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionCapacitaciones.resx">
+      <DependentUpon>FrmGestionCapacitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionCompetencias.resx">
+      <DependentUpon>FrmGestionCompetencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionDepartamento.resx">
+      <DependentUpon>FrmGestionDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionExpLaboral.resx">
+      <DependentUpon>FrmGestionExpLaboral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionIdiomas.resx">
+      <DependentUpon>FrmGestionIdiomas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionPuestos.resx">
+      <DependentUpon>FrmGestionPuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicioCandidato.resx">
+      <DependentUpon>FrmInicioCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicioRRHH.resx">
+      <DependentUpon>FrmInicioRRHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoCandidato.resx">
+      <DependentUpon>FrmNuevoCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarse.resx">
+      <DependentUpon>FrmRegistrarse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeleccionCandidato.resx">
+      <DependentUpon>FrmSeleccionCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RRHHDataSet.xsc">
+      <DependentUpon>RRHHDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RRHHDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RRHHDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RRHHDataSet.xss">
+      <DependentUpon>RRHHDataSet.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="RRHHModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RRHHModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="RRHHModel.edmx.diagram">
+      <DependentUpon>RRHHModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RRHHModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RRHHModel.edmx</DependentUpon>
+      <LastGenOutput>RRHHModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="RRHHModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RRHHModel.edmx</DependentUpon>
+      <LastGenOutput>RRHHModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

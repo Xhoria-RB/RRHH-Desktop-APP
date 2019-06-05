@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="272f2db063804207a4e94eaf39a0147d" Name="Diagram1">
+        <EntityTypeShape EntityType="RRHHModel.Candidatos" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.Capacitaciones" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.Competencias" Width="1.5" PointX="3" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.Departamentos" Width="1.5" PointX="1.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.Empleados" Width="1.5" PointX="6" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.ExpLaborales" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.Idiomas" Width="1.5" PointX="6" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.Personas" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.Puestos" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.REL_Capacitaciones_Candidatos" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.REL_Competencias_Candidatos" Width="1.5" PointX="5.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.REL_Idioma_Candidatos" Width="1.5" PointX="8.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RRHHModel.Usuarios" Width="1.5" PointX="3" PointY="17.875" IsExpanded="true" />
+        <AssociationConnector Association="RRHHModel.FK__Candidato__IdPer__00DF2177" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__Candidato__Puest__01D345B0" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__REL_Capac__IdCan__11158940" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__REL_Compe__IdCan__0D44F85C" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__REL_Idiom__IdCan__2EA5EC27" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__REL_Capac__IdCap__1209AD79" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__REL_Compe__IdCom__0E391C95" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__Puestos__IdDepar__793DFFAF" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__Empleados__IdPer__0880433F" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__Empleados__IdPue__09746778" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__ExpLabora__IdPer__05A3D694" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__REL_Idiom__IdIdi__2F9A1060" ManuallyRouted="false" />
+        <AssociationConnector Association="RRHHModel.FK__Usuarios__IdPers__18B6AB08" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
