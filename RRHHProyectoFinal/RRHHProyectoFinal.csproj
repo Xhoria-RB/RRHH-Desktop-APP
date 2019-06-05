@@ -42,6 +42,24 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -178,6 +196,12 @@
     <Compile Include="FrmRegistrarse.Designer.cs">
       <DependentUpon>FrmRegistrarse.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporte.Designer.cs">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSeleccionCandidato.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +255,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RRHHModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>RRHHModel.tt</DependentUpon>
     </Compile>
@@ -295,6 +320,9 @@
     <EmbeddedResource Include="FrmRegistrarse.resx">
       <DependentUpon>FrmRegistrarse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporte.resx">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSeleccionCandidato.resx">
       <DependentUpon>FrmSeleccionCandidato.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,10 +338,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="test.resx">
       <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\RRHHProyectoFinal.Test1TableAdapters.QueriesTableAdapter.datasource" />
+    <None Include="Properties\DataSources\test.datasource" />
+    <None Include="Properties\DataSources\Test1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -323,6 +355,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EntityDeploy Include="RRHHModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RRHHModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="RRHHDataSet.xsc">
       <DependentUpon>RRHHDataSet.xsd</DependentUpon>
     </None>
@@ -334,10 +370,6 @@
     <None Include="RRHHDataSet.xss">
       <DependentUpon>RRHHDataSet.xsd</DependentUpon>
     </None>
-    <EntityDeploy Include="RRHHModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RRHHModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="RRHHModel.edmx.diagram">
       <DependentUpon>RRHHModel.edmx</DependentUpon>
     </None>
@@ -358,6 +390,19 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>RRHHModel.edmx</DependentUpon>
       <LastGenOutput>RRHHModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

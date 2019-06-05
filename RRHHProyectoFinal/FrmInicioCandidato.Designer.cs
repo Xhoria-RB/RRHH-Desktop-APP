@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.BtnRegistrarCandidato = new System.Windows.Forms.Button();
-            this.BtnRegistrarExp = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.LblUsername = new System.Windows.Forms.Label();
             this.CmdCerrarSesion = new System.Windows.Forms.Button();
@@ -37,7 +36,8 @@
             // 
             // BtnRegistrarCandidato
             // 
-            this.BtnRegistrarCandidato.Location = new System.Drawing.Point(116, 68);
+            this.BtnRegistrarCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegistrarCandidato.Location = new System.Drawing.Point(110, 76);
             this.BtnRegistrarCandidato.Name = "BtnRegistrarCandidato";
             this.BtnRegistrarCandidato.Size = new System.Drawing.Size(171, 85);
             this.BtnRegistrarCandidato.TabIndex = 0;
@@ -45,37 +45,32 @@
             this.BtnRegistrarCandidato.UseVisualStyleBackColor = true;
             this.BtnRegistrarCandidato.Click += new System.EventHandler(this.BtnRegistrarCandidato_Click);
             // 
-            // BtnRegistrarExp
-            // 
-            this.BtnRegistrarExp.Location = new System.Drawing.Point(116, 213);
-            this.BtnRegistrarExp.Name = "BtnRegistrarExp";
-            this.BtnRegistrarExp.Size = new System.Drawing.Size(171, 85);
-            this.BtnRegistrarExp.TabIndex = 1;
-            this.BtnRegistrarExp.Text = "&Experiencia Laboral";
-            this.BtnRegistrarExp.UseVisualStyleBackColor = true;
-            this.BtnRegistrarExp.Click += new System.EventHandler(this.BtnRegistrarExp_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.Size = new System.Drawing.Size(88, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Bienvenido: ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // LblUsername
             // 
             this.LblUsername.AutoSize = true;
-            this.LblUsername.Location = new System.Drawing.Point(86, 13);
+            this.LblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUsername.Location = new System.Drawing.Point(107, 13);
             this.LblUsername.Name = "LblUsername";
-            this.LblUsername.Size = new System.Drawing.Size(57, 13);
+            this.LblUsername.Size = new System.Drawing.Size(80, 18);
             this.LblUsername.TabIndex = 3;
             this.LblUsername.Text = "UserName";
+            this.LblUsername.Click += new System.EventHandler(this.LblUsername_Click);
             // 
             // CmdCerrarSesion
             // 
-            this.CmdCerrarSesion.Location = new System.Drawing.Point(299, 338);
+            this.CmdCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdCerrarSesion.Location = new System.Drawing.Point(299, 194);
             this.CmdCerrarSesion.Name = "CmdCerrarSesion";
             this.CmdCerrarSesion.Size = new System.Drawing.Size(97, 33);
             this.CmdCerrarSesion.TabIndex = 4;
@@ -87,11 +82,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 385);
+            this.ClientSize = new System.Drawing.Size(408, 249);
             this.Controls.Add(this.CmdCerrarSesion);
             this.Controls.Add(this.LblUsername);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BtnRegistrarExp);
             this.Controls.Add(this.BtnRegistrarCandidato);
             this.Name = "FrmInicioCandidato";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -106,7 +100,6 @@
         #endregion
 
         private System.Windows.Forms.Button BtnRegistrarCandidato;
-        private System.Windows.Forms.Button BtnRegistrarExp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LblUsername;
         private System.Windows.Forms.Button CmdCerrarSesion;

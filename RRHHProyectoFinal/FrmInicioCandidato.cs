@@ -47,5 +47,15 @@ namespace RRHHProyectoFinal
             frmNuevoCandidato.ShowDialog();
             Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblUsername_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

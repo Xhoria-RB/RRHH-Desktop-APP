@@ -37,13 +37,13 @@
             this.BtnBorrar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.DgvCapacitaciones = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.idCapacitacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionCapacitacionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nivelCapacitacionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDesdeCapacitacionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaHastaCapacitacionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.institucionCapacitacionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.capacitacionesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).BeginInit();
             this.panel1.SuspendLayout();
@@ -126,16 +126,6 @@
             this.DgvCapacitaciones.Size = new System.Drawing.Size(592, 319);
             this.DgvCapacitaciones.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(174, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 25);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Gestion de Capacitaciones";
-            // 
             // idCapacitacionDataGridViewTextBoxColumn
             // 
             this.idCapacitacionDataGridViewTextBoxColumn.DataPropertyName = "IdCapacitacion";
@@ -173,6 +163,16 @@
             this.institucionCapacitacionesDataGridViewTextBoxColumn.HeaderText = "Instituciones";
             this.institucionCapacitacionesDataGridViewTextBoxColumn.Name = "institucionCapacitacionesDataGridViewTextBoxColumn";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(174, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(246, 25);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Gestion de Capacitaciones";
+            // 
             // FrmGestionCapacitaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,6 +182,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "FrmGestionCapacitaciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Capacitaciones";
             this.Load += new System.EventHandler(this.FrmGestionCapacitaciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.capacitacionesBindingSource)).EndInit();

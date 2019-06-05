@@ -79,7 +79,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(16, 17);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(485, 326);
@@ -95,7 +95,7 @@
             "F"});
             this.CbxSexo.Location = new System.Drawing.Point(265, 241);
             this.CbxSexo.Name = "CbxSexo";
-            this.CbxSexo.Size = new System.Drawing.Size(167, 24);
+            this.CbxSexo.Size = new System.Drawing.Size(167, 26);
             this.CbxSexo.TabIndex = 31;
             // 
             // TxtNombre
@@ -103,7 +103,7 @@
             this.TxtNombre.Location = new System.Drawing.Point(265, 67);
             this.TxtNombre.MaxLength = 20;
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(167, 23);
+            this.TxtNombre.Size = new System.Drawing.Size(167, 24);
             this.TxtNombre.TabIndex = 28;
             // 
             // TxtCedula
@@ -111,7 +111,7 @@
             this.TxtCedula.Location = new System.Drawing.Point(265, 180);
             this.TxtCedula.MaxLength = 20;
             this.TxtCedula.Name = "TxtCedula";
-            this.TxtCedula.Size = new System.Drawing.Size(167, 23);
+            this.TxtCedula.Size = new System.Drawing.Size(167, 24);
             this.TxtCedula.TabIndex = 30;
             // 
             // label8
@@ -129,7 +129,7 @@
             this.TxtApellido.Location = new System.Drawing.Point(265, 122);
             this.TxtApellido.MaxLength = 30;
             this.TxtApellido.Name = "TxtApellido";
-            this.TxtApellido.Size = new System.Drawing.Size(167, 23);
+            this.TxtApellido.Size = new System.Drawing.Size(167, 24);
             this.TxtApellido.TabIndex = 29;
             // 
             // label7
@@ -167,7 +167,7 @@
             this.TxtConfirmPassw.Location = new System.Drawing.Point(51, 242);
             this.TxtConfirmPassw.Name = "TxtConfirmPassw";
             this.TxtConfirmPassw.PasswordChar = '*';
-            this.TxtConfirmPassw.Size = new System.Drawing.Size(167, 23);
+            this.TxtConfirmPassw.Size = new System.Drawing.Size(167, 24);
             this.TxtConfirmPassw.TabIndex = 7;
             // 
             // TxtPassword
@@ -175,7 +175,7 @@
             this.TxtPassword.Location = new System.Drawing.Point(51, 180);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
-            this.TxtPassword.Size = new System.Drawing.Size(167, 23);
+            this.TxtPassword.Size = new System.Drawing.Size(167, 24);
             this.TxtPassword.TabIndex = 6;
             // 
             // TxtEmail
@@ -183,7 +183,7 @@
             this.TxtEmail.Location = new System.Drawing.Point(51, 122);
             this.TxtEmail.MaxLength = 100;
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(167, 23);
+            this.TxtEmail.Size = new System.Drawing.Size(167, 24);
             this.TxtEmail.TabIndex = 5;
             // 
             // TxtUsuario
@@ -191,7 +191,7 @@
             this.TxtUsuario.Location = new System.Drawing.Point(51, 67);
             this.TxtUsuario.MaxLength = 20;
             this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(167, 23);
+            this.TxtUsuario.Size = new System.Drawing.Size(167, 24);
             this.TxtUsuario.TabIndex = 4;
             // 
             // label4
@@ -236,6 +236,7 @@
             // 
             // BtnAceptar
             // 
+            this.BtnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAceptar.Location = new System.Drawing.Point(289, 395);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(101, 37);
@@ -246,6 +247,7 @@
             // 
             // BtnCancelar
             // 
+            this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Location = new System.Drawing.Point(414, 395);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(101, 37);

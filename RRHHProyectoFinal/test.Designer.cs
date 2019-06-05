@@ -29,99 +29,61 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.competenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rRHHDataSet = new RRHHProyectoFinal.RRHHDataSet();
-            this.competenciasTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.CompetenciasTableAdapter();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.competenciasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.RRHHDataSet = new RRHHProyectoFinal.RRHHDataSet();
+            this.reporteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reporteTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.ReporteTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.RRHHDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reporteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // listBox1
+            // reportViewer1
             // 
-            this.listBox1.DataSource = this.competenciasBindingSource;
-            this.listBox1.DisplayMember = "Descripcion_Competencias";
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(317, 290);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox1.Size = new System.Drawing.Size(174, 121);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.ValueMember = "IdCompetencia";
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.reporteBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "RRHHProyectoFinal.Report1.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(223, 102);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.TabIndex = 0;
             // 
-            // competenciasBindingSource
+            // RRHHDataSet
             // 
-            this.competenciasBindingSource.DataMember = "Competencias";
-            this.competenciasBindingSource.DataSource = this.rRHHDataSet;
+            this.RRHHDataSet.DataSetName = "RRHHDataSet";
+            this.RRHHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // rRHHDataSet
+            // reporteBindingSource
             // 
-            this.rRHHDataSet.DataSetName = "RRHHDataSet";
-            this.rRHHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.reporteBindingSource.DataMember = "Reporte";
+            this.reporteBindingSource.DataSource = this.RRHHDataSet;
             // 
-            // competenciasTableAdapter
+            // reporteTableAdapter
             // 
-            this.competenciasTableAdapter.ClearBeforeFill = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(589, 216);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(513, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 48);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(470, 236);
-            this.dataGridView1.TabIndex = 3;
+            this.reporteTableAdapter.ClearBeforeFill = true;
             // 
             // test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.reportViewer1);
             this.Name = "test";
             this.Text = "test";
             this.Load += new System.EventHandler(this.test_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.competenciasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RRHHDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reporteBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
-        private RRHHDataSet rRHHDataSet;
-        private System.Windows.Forms.BindingSource competenciasBindingSource;
-        private RRHHDataSetTableAdapters.CompetenciasTableAdapter competenciasTableAdapter;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private RRHHDataSet RRHHDataSet;
+        private System.Windows.Forms.BindingSource reporteBindingSource;
+        private RRHHDataSetTableAdapters.ReporteTableAdapter reporteTableAdapter;
     }
 }

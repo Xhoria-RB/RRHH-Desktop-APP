@@ -74,5 +74,13 @@ namespace RRHHProyectoFinal
             frmSeleccionCandidato.ShowDialog();
             Show();
         }
+
+        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReporte frmReporte = new FrmReporte();
+            Hide();
+            frmReporte.ShowDialog();
+            Show();
+        }
     }
 }

@@ -42,9 +42,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(123, 52);
+            this.pictureBox1.Location = new System.Drawing.Point(108, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 130);
+            this.pictureBox1.Size = new System.Drawing.Size(158, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -52,41 +52,44 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(69, 207);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(74, 206);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 17);
+            this.label1.Size = new System.Drawing.Size(68, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuario:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(51, 247);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(46, 251);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 17);
+            this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Contrasena:";
             // 
             // TxtUsuario
             // 
-            this.TxtUsuario.Location = new System.Drawing.Point(136, 204);
+            this.TxtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUsuario.Location = new System.Drawing.Point(148, 204);
             this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(109, 20);
+            this.TxtUsuario.Size = new System.Drawing.Size(159, 24);
             this.TxtUsuario.TabIndex = 3;
             // 
             // TxtPassword
             // 
-            this.TxtPassword.Location = new System.Drawing.Point(136, 249);
+            this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPassword.Location = new System.Drawing.Point(148, 249);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
-            this.TxtPassword.Size = new System.Drawing.Size(109, 20);
+            this.TxtPassword.Size = new System.Drawing.Size(159, 24);
             this.TxtPassword.TabIndex = 4;
             // 
             // BtnIniciar
             // 
-            this.BtnIniciar.Location = new System.Drawing.Point(123, 298);
+            this.BtnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIniciar.Location = new System.Drawing.Point(120, 296);
             this.BtnIniciar.Name = "BtnIniciar";
             this.BtnIniciar.Size = new System.Drawing.Size(122, 46);
             this.BtnIniciar.TabIndex = 5;
@@ -97,10 +100,10 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.Location = new System.Drawing.Point(12, 383);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(81, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(91, 20);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Registrarse";

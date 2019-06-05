@@ -122,6 +122,7 @@
             this.BtnCerrar.TabIndex = 3;
             this.BtnCerrar.Text = "Cerrar";
             this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // FrmSeleccionCandidato
             // 
@@ -132,6 +133,7 @@
             this.Controls.Add(this.BtnDetalles);
             this.Controls.Add(this.splitContainer1);
             this.Name = "FrmSeleccionCandidato";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seleccion Candidato";
             this.Load += new System.EventHandler(this.FrmSeleccionCandidato_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);

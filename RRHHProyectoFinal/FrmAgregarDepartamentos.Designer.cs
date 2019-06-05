@@ -94,6 +94,7 @@
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.panel1);
             this.Name = "FrmAgregarDepartamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Departamentos";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

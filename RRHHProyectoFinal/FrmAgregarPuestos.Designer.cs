@@ -241,6 +241,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "FrmAgregarPuestos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Puestos";
             this.Load += new System.EventHandler(this.FrmAgregarPuestos_Load);
             this.panel1.ResumeLayout(false);

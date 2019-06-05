@@ -70,5 +70,10 @@ namespace RRHHProyectoFinal
             Show();
             LoadData();
         }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

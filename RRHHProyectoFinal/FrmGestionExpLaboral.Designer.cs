@@ -191,6 +191,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "FrmGestionExpLaboral";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Experiencia Laboral";
             this.Load += new System.EventHandler(this.FrmGestionExpLaboral_Load);
             ((System.ComponentModel.ISupportInitialize)(this.expLaboralesBindingSource)).EndInit();

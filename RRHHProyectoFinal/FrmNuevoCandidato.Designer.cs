@@ -383,6 +383,7 @@
             this.BtnCancelar.TabIndex = 2;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnExpLaborales
             // 
@@ -404,6 +405,7 @@
             this.Controls.Add(this.BtnAceptar);
             this.Controls.Add(this.panel1);
             this.Name = "FrmNuevoCandidato";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo Candidato";
             this.Load += new System.EventHandler(this.FrmNuevoCandidato_Load);
             this.panel1.ResumeLayout(false);

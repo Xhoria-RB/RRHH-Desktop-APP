@@ -138,5 +138,10 @@ namespace RRHHProyectoFinal
             FrmGestionExpLaboral frmGestionExpLaboral = new FrmGestionExpLaboral();
             frmGestionExpLaboral.Show();
         }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

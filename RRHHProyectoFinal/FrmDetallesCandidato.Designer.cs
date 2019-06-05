@@ -441,6 +441,7 @@
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.panel1);
             this.Name = "FrmDetallesCandidato";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalles Candidato";
             this.Load += new System.EventHandler(this.FrmDetallesCandidato_Load);
             this.groupBox1.ResumeLayout(false);

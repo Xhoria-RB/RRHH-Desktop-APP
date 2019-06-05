@@ -31,13 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.DgvPuestos = new System.Windows.Forms.DataGridView();
-            this.puestosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rRHHDataSet = new RRHHProyectoFinal.RRHHDataSet();
-            this.puestosTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.PuestosTableAdapter();
-            this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnBorrar = new System.Windows.Forms.Button();
-            this.BtnCerrar = new System.Windows.Forms.Button();
+            this.BtnAgregar = new System.Windows.Forms.Button();
+            this.DgvPuestos = new System.Windows.Forms.DataGridView();
             this.idPuestoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombrePuestosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDepartamentoPuestosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +41,10 @@
             this.salarioMinimoPuestosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salarioMaximoPuestosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoPuestosDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.puestosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rRHHDataSet = new RRHHProyectoFinal.RRHHDataSet();
+            this.puestosTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.PuestosTableAdapter();
+            this.BtnCerrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvPuestos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.puestosBindingSource)).BeginInit();
@@ -72,6 +72,26 @@
             this.panel1.Size = new System.Drawing.Size(600, 362);
             this.panel1.TabIndex = 6;
             // 
+            // BtnBorrar
+            // 
+            this.BtnBorrar.Location = new System.Drawing.Point(130, 324);
+            this.BtnBorrar.Name = "BtnBorrar";
+            this.BtnBorrar.Size = new System.Drawing.Size(98, 32);
+            this.BtnBorrar.TabIndex = 3;
+            this.BtnBorrar.Text = "Borrar";
+            this.BtnBorrar.UseVisualStyleBackColor = true;
+            this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Location = new System.Drawing.Point(16, 325);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(98, 32);
+            this.BtnAgregar.TabIndex = 2;
+            this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
             // DgvPuestos
             // 
             this.DgvPuestos.AllowUserToAddRows = false;
@@ -93,50 +113,6 @@
             this.DgvPuestos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvPuestos.Size = new System.Drawing.Size(592, 319);
             this.DgvPuestos.TabIndex = 1;
-            // 
-            // puestosBindingSource
-            // 
-            this.puestosBindingSource.DataMember = "Puestos";
-            this.puestosBindingSource.DataSource = this.rRHHDataSet;
-            // 
-            // rRHHDataSet
-            // 
-            this.rRHHDataSet.DataSetName = "RRHHDataSet";
-            this.rRHHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // puestosTableAdapter
-            // 
-            this.puestosTableAdapter.ClearBeforeFill = true;
-            // 
-            // BtnAgregar
-            // 
-            this.BtnAgregar.Location = new System.Drawing.Point(16, 325);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(98, 32);
-            this.BtnAgregar.TabIndex = 2;
-            this.BtnAgregar.Text = "Agregar";
-            this.BtnAgregar.UseVisualStyleBackColor = true;
-            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
-            // 
-            // BtnBorrar
-            // 
-            this.BtnBorrar.Location = new System.Drawing.Point(130, 324);
-            this.BtnBorrar.Name = "BtnBorrar";
-            this.BtnBorrar.Size = new System.Drawing.Size(98, 32);
-            this.BtnBorrar.TabIndex = 3;
-            this.BtnBorrar.Text = "Borrar";
-            this.BtnBorrar.UseVisualStyleBackColor = true;
-            this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
-            // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.Location = new System.Drawing.Point(476, 460);
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(136, 46);
-            this.BtnCerrar.TabIndex = 4;
-            this.BtnCerrar.Text = "Cerrar";
-            this.BtnCerrar.UseVisualStyleBackColor = true;
-            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // idPuestoDataGridViewTextBoxColumn
             // 
@@ -182,6 +158,30 @@
             this.estadoPuestosDataGridViewCheckBoxColumn.Name = "estadoPuestosDataGridViewCheckBoxColumn";
             this.estadoPuestosDataGridViewCheckBoxColumn.Visible = false;
             // 
+            // puestosBindingSource
+            // 
+            this.puestosBindingSource.DataMember = "Puestos";
+            this.puestosBindingSource.DataSource = this.rRHHDataSet;
+            // 
+            // rRHHDataSet
+            // 
+            this.rRHHDataSet.DataSetName = "RRHHDataSet";
+            this.rRHHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // puestosTableAdapter
+            // 
+            this.puestosTableAdapter.ClearBeforeFill = true;
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Location = new System.Drawing.Point(476, 460);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(136, 46);
+            this.BtnCerrar.TabIndex = 4;
+            this.BtnCerrar.Text = "Cerrar";
+            this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
             // FrmGestionPuestos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,6 +191,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "FrmGestionPuestos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Puestos";
             this.Load += new System.EventHandler(this.FrmGestionPuestos_Load);
             this.panel1.ResumeLayout(false);

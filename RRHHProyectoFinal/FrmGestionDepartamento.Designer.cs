@@ -37,10 +37,10 @@
             this.BtnBorrar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.DgvDepartamentos = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.idDepartamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDepartamentosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDepartamentosDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.departamentosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).BeginInit();
             this.panel1.SuspendLayout();
@@ -120,16 +120,6 @@
             this.DgvDepartamentos.Size = new System.Drawing.Size(592, 319);
             this.DgvDepartamentos.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 25);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Gestion de Departamentos";
-            // 
             // idDepartamentoDataGridViewTextBoxColumn
             // 
             this.idDepartamentoDataGridViewTextBoxColumn.DataPropertyName = "IdDepartamento";
@@ -150,6 +140,16 @@
             this.estadoDepartamentosDataGridViewCheckBoxColumn.Name = "estadoDepartamentosDataGridViewCheckBoxColumn";
             this.estadoDepartamentosDataGridViewCheckBoxColumn.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(175, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(244, 25);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Gestion de Departamentos";
+            // 
             // FrmGestionDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +159,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "FrmGestionDepartamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Departamento";
             this.Load += new System.EventHandler(this.FrmGestionDepartamento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.departamentosBindingSource)).EndInit();

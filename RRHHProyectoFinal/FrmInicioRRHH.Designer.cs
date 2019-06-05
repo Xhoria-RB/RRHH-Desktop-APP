@@ -31,9 +31,6 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.candidatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.experienciasLaboralesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.capacitacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,7 +38,7 @@
             this.idiomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.puestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnSeleccionCandidato = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.LblUsername = new System.Windows.Forms.Label();
@@ -55,7 +52,6 @@
             this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
-            this.consultarToolStripMenuItem1,
             this.consultarToolStripMenuItem,
             this.reportesToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
@@ -77,27 +73,6 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
             this.salirToolStripMenuItem.Text = "Salir";
-            // 
-            // consultarToolStripMenuItem1
-            // 
-            this.consultarToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.candidatosToolStripMenuItem,
-            this.experienciasLaboralesToolStripMenuItem});
-            this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
-            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(83, 24);
-            this.consultarToolStripMenuItem1.Text = "Consultar";
-            // 
-            // candidatosToolStripMenuItem
-            // 
-            this.candidatosToolStripMenuItem.Name = "candidatosToolStripMenuItem";
-            this.candidatosToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
-            this.candidatosToolStripMenuItem.Text = "Candidatos";
-            // 
-            // experienciasLaboralesToolStripMenuItem
-            // 
-            this.experienciasLaboralesToolStripMenuItem.Name = "experienciasLaboralesToolStripMenuItem";
-            this.experienciasLaboralesToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
-            this.experienciasLaboralesToolStripMenuItem.Text = "Experiencias Laborales";
             // 
             // consultarToolStripMenuItem
             // 
@@ -151,19 +126,21 @@
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.reportesToolStripMenuItem.Text = "Reportes";
+            this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
-            // button1
+            // BtnSeleccionCandidato
             // 
-            this.button1.Location = new System.Drawing.Point(100, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 83);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Seleccion de candidatos";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnSeleccionCandidato.Location = new System.Drawing.Point(100, 79);
+            this.BtnSeleccionCandidato.Name = "BtnSeleccionCandidato";
+            this.BtnSeleccionCandidato.Size = new System.Drawing.Size(203, 83);
+            this.BtnSeleccionCandidato.TabIndex = 2;
+            this.BtnSeleccionCandidato.Text = "Seleccion de candidatos";
+            this.BtnSeleccionCandidato.UseVisualStyleBackColor = true;
+            this.BtnSeleccionCandidato.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(322, 363);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 45);
@@ -177,16 +154,16 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.Size = new System.Drawing.Size(88, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Bienvenido: ";
             // 
             // LblUsername
             // 
             this.LblUsername.AutoSize = true;
-            this.LblUsername.Location = new System.Drawing.Point(75, 9);
+            this.LblUsername.Location = new System.Drawing.Point(97, 9);
             this.LblUsername.Name = "LblUsername";
-            this.LblUsername.Size = new System.Drawing.Size(55, 13);
+            this.LblUsername.Size = new System.Drawing.Size(77, 18);
             this.LblUsername.TabIndex = 5;
             this.LblUsername.Text = "Username";
             // 
@@ -194,8 +171,9 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.BtnSeleccionCandidato);
             this.panel1.Controls.Add(this.LblUsername);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(16, 82);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(415, 246);
@@ -227,19 +205,16 @@
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem capacitacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem competenciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem idiomasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem puestosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnSeleccionCandidato;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LblUsername;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ToolStripMenuItem candidatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem departamentosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem experienciasLaboralesToolStripMenuItem;
     }
 }

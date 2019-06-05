@@ -106,6 +106,7 @@
             this.NudSalario.Name = "NudSalario";
             this.NudSalario.Size = new System.Drawing.Size(120, 20);
             this.NudSalario.TabIndex = 9;
+            this.NudSalario.ThousandsSeparator = true;
             this.NudSalario.Value = new decimal(new int[] {
             5000,
             0,
@@ -114,6 +115,7 @@
             // 
             // DtpHasta
             // 
+            this.DtpHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DtpHasta.Location = new System.Drawing.Point(344, 114);
             this.DtpHasta.Name = "DtpHasta";
             this.DtpHasta.Size = new System.Drawing.Size(170, 20);
@@ -121,6 +123,7 @@
             // 
             // DtpDesde
             // 
+            this.DtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DtpDesde.Location = new System.Drawing.Point(85, 114);
             this.DtpDesde.Name = "DtpDesde";
             this.DtpDesde.Size = new System.Drawing.Size(170, 20);
@@ -212,6 +215,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "FrmAgregarExpLaboral";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Experiencia Laboral";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

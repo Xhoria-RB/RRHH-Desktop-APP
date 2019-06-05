@@ -37,10 +37,10 @@
             this.BtnBorrar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.DgvCompetencias = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.idCompetenciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionCompetenciasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoCompetenciasDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.competenciasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).BeginInit();
             this.panel1.SuspendLayout();
@@ -120,16 +120,6 @@
             this.DgvCompetencias.Size = new System.Drawing.Size(592, 319);
             this.DgvCompetencias.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(174, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 25);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Gestion de Competencias";
-            // 
             // idCompetenciaDataGridViewTextBoxColumn
             // 
             this.idCompetenciaDataGridViewTextBoxColumn.DataPropertyName = "IdCompetencia";
@@ -150,6 +140,16 @@
             this.estadoCompetenciasDataGridViewCheckBoxColumn.Name = "estadoCompetenciasDataGridViewCheckBoxColumn";
             this.estadoCompetenciasDataGridViewCheckBoxColumn.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(174, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(237, 25);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Gestion de Competencias";
+            // 
             // FrmGestionCompetencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +159,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "FrmGestionCompetencias";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Competencias";
             this.Load += new System.EventHandler(this.FrmGestionCompetencias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.competenciasBindingSource)).EndInit();
