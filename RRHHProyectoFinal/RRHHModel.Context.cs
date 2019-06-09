@@ -37,7 +37,6 @@ namespace RRHHProyectoFinal
         public virtual DbSet<REL_Capacitaciones_Candidatos> REL_Capacitaciones_Candidatos { get; set; }
         public virtual DbSet<REL_Competencias_Candidatos> REL_Competencias_Candidatos { get; set; }
         public virtual DbSet<REL_Idioma_Candidatos> REL_Idioma_Candidatos { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Usuarios> Usuarios { get; set; }
     }
 }

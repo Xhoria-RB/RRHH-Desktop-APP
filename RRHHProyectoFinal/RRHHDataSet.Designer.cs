@@ -52,31 +52,31 @@ namespace RRHHProyectoFinal {
         
         private ReporteDataTable tableReporte;
         
-        private global::System.Data.DataRelation relationFK__Candidato__IdPer__00DF2177;
+        private global::System.Data.DataRelation relationFK__Candidato__IdPer__4AB81AF0;
         
-        private global::System.Data.DataRelation relationFK__Candidato__Puest__01D345B0;
+        private global::System.Data.DataRelation relationFK__Candidato__Puest__4BAC3F29;
         
-        private global::System.Data.DataRelation relationFK__Empleados__IdPer__0880433F;
+        private global::System.Data.DataRelation relationFK__Empleados__IdPer__52593CB8;
         
-        private global::System.Data.DataRelation relationFK__Empleados__IdPue__09746778;
+        private global::System.Data.DataRelation relationFK__Empleados__IdPue__534D60F1;
         
-        private global::System.Data.DataRelation relationFK__ExpLabora__IdPer__05A3D694;
+        private global::System.Data.DataRelation relationFK__ExpLabora__IdPer__4F7CD00D;
         
-        private global::System.Data.DataRelation relationFK__Puestos__IdDepar__793DFFAF;
+        private global::System.Data.DataRelation relationFK__Puestos__IdDepar__4316F928;
         
-        private global::System.Data.DataRelation relationFK__REL_Capac__IdCan__32767D0B;
+        private global::System.Data.DataRelation relationFK__REL_Capac__IdCan__5AEE82B9;
         
-        private global::System.Data.DataRelation relationFK__REL_Capac__IdCap__336AA144;
+        private global::System.Data.DataRelation relationFK__REL_Capac__IdCap__5BE2A6F2;
         
-        private global::System.Data.DataRelation relationFK__REL_Compe__IdCan__0D44F85C;
+        private global::System.Data.DataRelation relationFK__REL_Compe__IdCan__571DF1D5;
         
-        private global::System.Data.DataRelation relationFK__REL_Compe__IdCom__0E391C95;
+        private global::System.Data.DataRelation relationFK__REL_Compe__IdCom__5812160E;
         
-        private global::System.Data.DataRelation relationFK__REL_Idiom__IdCan__2EA5EC27;
+        private global::System.Data.DataRelation relationFK__REL_Idiom__IdCan__5EBF139D;
         
-        private global::System.Data.DataRelation relationFK__REL_Idiom__IdIdi__2F9A1060;
+        private global::System.Data.DataRelation relationFK__REL_Idiom__IdIdi__5FB337D6;
         
-        private global::System.Data.DataRelation relationFK__Usuarios__IdPers__18B6AB08;
+        private global::System.Data.DataRelation relationFK__Usuarios__IdPers__6383C8BA;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -532,19 +532,19 @@ namespace RRHHProyectoFinal {
                     this.tableReporte.InitVars();
                 }
             }
-            this.relationFK__Candidato__IdPer__00DF2177 = this.Relations["FK__Candidato__IdPer__00DF2177"];
-            this.relationFK__Candidato__Puest__01D345B0 = this.Relations["FK__Candidato__Puest__01D345B0"];
-            this.relationFK__Empleados__IdPer__0880433F = this.Relations["FK__Empleados__IdPer__0880433F"];
-            this.relationFK__Empleados__IdPue__09746778 = this.Relations["FK__Empleados__IdPue__09746778"];
-            this.relationFK__ExpLabora__IdPer__05A3D694 = this.Relations["FK__ExpLabora__IdPer__05A3D694"];
-            this.relationFK__Puestos__IdDepar__793DFFAF = this.Relations["FK__Puestos__IdDepar__793DFFAF"];
-            this.relationFK__REL_Capac__IdCan__32767D0B = this.Relations["FK__REL_Capac__IdCan__32767D0B"];
-            this.relationFK__REL_Capac__IdCap__336AA144 = this.Relations["FK__REL_Capac__IdCap__336AA144"];
-            this.relationFK__REL_Compe__IdCan__0D44F85C = this.Relations["FK__REL_Compe__IdCan__0D44F85C"];
-            this.relationFK__REL_Compe__IdCom__0E391C95 = this.Relations["FK__REL_Compe__IdCom__0E391C95"];
-            this.relationFK__REL_Idiom__IdCan__2EA5EC27 = this.Relations["FK__REL_Idiom__IdCan__2EA5EC27"];
-            this.relationFK__REL_Idiom__IdIdi__2F9A1060 = this.Relations["FK__REL_Idiom__IdIdi__2F9A1060"];
-            this.relationFK__Usuarios__IdPers__18B6AB08 = this.Relations["FK__Usuarios__IdPers__18B6AB08"];
+            this.relationFK__Candidato__IdPer__4AB81AF0 = this.Relations["FK__Candidato__IdPer__4AB81AF0"];
+            this.relationFK__Candidato__Puest__4BAC3F29 = this.Relations["FK__Candidato__Puest__4BAC3F29"];
+            this.relationFK__Empleados__IdPer__52593CB8 = this.Relations["FK__Empleados__IdPer__52593CB8"];
+            this.relationFK__Empleados__IdPue__534D60F1 = this.Relations["FK__Empleados__IdPue__534D60F1"];
+            this.relationFK__ExpLabora__IdPer__4F7CD00D = this.Relations["FK__ExpLabora__IdPer__4F7CD00D"];
+            this.relationFK__Puestos__IdDepar__4316F928 = this.Relations["FK__Puestos__IdDepar__4316F928"];
+            this.relationFK__REL_Capac__IdCan__5AEE82B9 = this.Relations["FK__REL_Capac__IdCan__5AEE82B9"];
+            this.relationFK__REL_Capac__IdCap__5BE2A6F2 = this.Relations["FK__REL_Capac__IdCap__5BE2A6F2"];
+            this.relationFK__REL_Compe__IdCan__571DF1D5 = this.Relations["FK__REL_Compe__IdCan__571DF1D5"];
+            this.relationFK__REL_Compe__IdCom__5812160E = this.Relations["FK__REL_Compe__IdCom__5812160E"];
+            this.relationFK__REL_Idiom__IdCan__5EBF139D = this.Relations["FK__REL_Idiom__IdCan__5EBF139D"];
+            this.relationFK__REL_Idiom__IdIdi__5FB337D6 = this.Relations["FK__REL_Idiom__IdIdi__5FB337D6"];
+            this.relationFK__Usuarios__IdPers__6383C8BA = this.Relations["FK__Usuarios__IdPers__6383C8BA"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -583,58 +583,58 @@ namespace RRHHProyectoFinal {
             base.Tables.Add(this.tableUsuarios);
             this.tableReporte = new ReporteDataTable();
             base.Tables.Add(this.tableReporte);
-            this.relationFK__Candidato__IdPer__00DF2177 = new global::System.Data.DataRelation("FK__Candidato__IdPer__00DF2177", new global::System.Data.DataColumn[] {
+            this.relationFK__Candidato__IdPer__4AB81AF0 = new global::System.Data.DataRelation("FK__Candidato__IdPer__4AB81AF0", new global::System.Data.DataColumn[] {
                         this.tablePersonas.IdPersonaColumn}, new global::System.Data.DataColumn[] {
                         this.tableCandidatos.IdPersona_CandidatosColumn}, false);
-            this.Relations.Add(this.relationFK__Candidato__IdPer__00DF2177);
-            this.relationFK__Candidato__Puest__01D345B0 = new global::System.Data.DataRelation("FK__Candidato__Puest__01D345B0", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Candidato__IdPer__4AB81AF0);
+            this.relationFK__Candidato__Puest__4BAC3F29 = new global::System.Data.DataRelation("FK__Candidato__Puest__4BAC3F29", new global::System.Data.DataColumn[] {
                         this.tablePuestos.IdPuestoColumn}, new global::System.Data.DataColumn[] {
                         this.tableCandidatos.PuestoAspirado_CandidatosColumn}, false);
-            this.Relations.Add(this.relationFK__Candidato__Puest__01D345B0);
-            this.relationFK__Empleados__IdPer__0880433F = new global::System.Data.DataRelation("FK__Empleados__IdPer__0880433F", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Candidato__Puest__4BAC3F29);
+            this.relationFK__Empleados__IdPer__52593CB8 = new global::System.Data.DataRelation("FK__Empleados__IdPer__52593CB8", new global::System.Data.DataColumn[] {
                         this.tablePersonas.IdPersonaColumn}, new global::System.Data.DataColumn[] {
                         this.tableEmpleados.IdPersona_EmpleadosColumn}, false);
-            this.Relations.Add(this.relationFK__Empleados__IdPer__0880433F);
-            this.relationFK__Empleados__IdPue__09746778 = new global::System.Data.DataRelation("FK__Empleados__IdPue__09746778", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Empleados__IdPer__52593CB8);
+            this.relationFK__Empleados__IdPue__534D60F1 = new global::System.Data.DataRelation("FK__Empleados__IdPue__534D60F1", new global::System.Data.DataColumn[] {
                         this.tablePuestos.IdPuestoColumn}, new global::System.Data.DataColumn[] {
                         this.tableEmpleados.IdPuesto_EmpleadosColumn}, false);
-            this.Relations.Add(this.relationFK__Empleados__IdPue__09746778);
-            this.relationFK__ExpLabora__IdPer__05A3D694 = new global::System.Data.DataRelation("FK__ExpLabora__IdPer__05A3D694", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Empleados__IdPue__534D60F1);
+            this.relationFK__ExpLabora__IdPer__4F7CD00D = new global::System.Data.DataRelation("FK__ExpLabora__IdPer__4F7CD00D", new global::System.Data.DataColumn[] {
                         this.tablePersonas.IdPersonaColumn}, new global::System.Data.DataColumn[] {
                         this.tableExpLaborales.IdPersona_ExpLaboralColumn}, false);
-            this.Relations.Add(this.relationFK__ExpLabora__IdPer__05A3D694);
-            this.relationFK__Puestos__IdDepar__793DFFAF = new global::System.Data.DataRelation("FK__Puestos__IdDepar__793DFFAF", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__ExpLabora__IdPer__4F7CD00D);
+            this.relationFK__Puestos__IdDepar__4316F928 = new global::System.Data.DataRelation("FK__Puestos__IdDepar__4316F928", new global::System.Data.DataColumn[] {
                         this.tableDepartamentos.IdDepartamentoColumn}, new global::System.Data.DataColumn[] {
                         this.tablePuestos.IdDepartamento_PuestosColumn}, false);
-            this.Relations.Add(this.relationFK__Puestos__IdDepar__793DFFAF);
-            this.relationFK__REL_Capac__IdCan__32767D0B = new global::System.Data.DataRelation("FK__REL_Capac__IdCan__32767D0B", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Puestos__IdDepar__4316F928);
+            this.relationFK__REL_Capac__IdCan__5AEE82B9 = new global::System.Data.DataRelation("FK__REL_Capac__IdCan__5AEE82B9", new global::System.Data.DataColumn[] {
                         this.tableCandidatos.IdCandidatoColumn}, new global::System.Data.DataColumn[] {
                         this.tableREL_Capacitaciones_Candidatos.IdCandidato_Rel_Capacitaciones_CandidatosColumn}, false);
-            this.Relations.Add(this.relationFK__REL_Capac__IdCan__32767D0B);
-            this.relationFK__REL_Capac__IdCap__336AA144 = new global::System.Data.DataRelation("FK__REL_Capac__IdCap__336AA144", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__REL_Capac__IdCan__5AEE82B9);
+            this.relationFK__REL_Capac__IdCap__5BE2A6F2 = new global::System.Data.DataRelation("FK__REL_Capac__IdCap__5BE2A6F2", new global::System.Data.DataColumn[] {
                         this.tableCapacitaciones.IdCapacitacionColumn}, new global::System.Data.DataColumn[] {
                         this.tableREL_Capacitaciones_Candidatos.IdCapacitacion_Rel_Capacitaciones_CandidatosColumn}, false);
-            this.Relations.Add(this.relationFK__REL_Capac__IdCap__336AA144);
-            this.relationFK__REL_Compe__IdCan__0D44F85C = new global::System.Data.DataRelation("FK__REL_Compe__IdCan__0D44F85C", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__REL_Capac__IdCap__5BE2A6F2);
+            this.relationFK__REL_Compe__IdCan__571DF1D5 = new global::System.Data.DataRelation("FK__REL_Compe__IdCan__571DF1D5", new global::System.Data.DataColumn[] {
                         this.tableCandidatos.IdCandidatoColumn}, new global::System.Data.DataColumn[] {
                         this.tableREL_Competencias_Candidatos.IdCandidato_Rel_Competencias_CandidatosColumn}, false);
-            this.Relations.Add(this.relationFK__REL_Compe__IdCan__0D44F85C);
-            this.relationFK__REL_Compe__IdCom__0E391C95 = new global::System.Data.DataRelation("FK__REL_Compe__IdCom__0E391C95", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__REL_Compe__IdCan__571DF1D5);
+            this.relationFK__REL_Compe__IdCom__5812160E = new global::System.Data.DataRelation("FK__REL_Compe__IdCom__5812160E", new global::System.Data.DataColumn[] {
                         this.tableCompetencias.IdCompetenciaColumn}, new global::System.Data.DataColumn[] {
                         this.tableREL_Competencias_Candidatos.IdCompetencia_Rel_Competencias_CandidatosColumn}, false);
-            this.Relations.Add(this.relationFK__REL_Compe__IdCom__0E391C95);
-            this.relationFK__REL_Idiom__IdCan__2EA5EC27 = new global::System.Data.DataRelation("FK__REL_Idiom__IdCan__2EA5EC27", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__REL_Compe__IdCom__5812160E);
+            this.relationFK__REL_Idiom__IdCan__5EBF139D = new global::System.Data.DataRelation("FK__REL_Idiom__IdCan__5EBF139D", new global::System.Data.DataColumn[] {
                         this.tableCandidatos.IdCandidatoColumn}, new global::System.Data.DataColumn[] {
                         this.tableREL_Idioma_Candidatos.IdCandidato_Rel_Idioma_CandidatosColumn}, false);
-            this.Relations.Add(this.relationFK__REL_Idiom__IdCan__2EA5EC27);
-            this.relationFK__REL_Idiom__IdIdi__2F9A1060 = new global::System.Data.DataRelation("FK__REL_Idiom__IdIdi__2F9A1060", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__REL_Idiom__IdCan__5EBF139D);
+            this.relationFK__REL_Idiom__IdIdi__5FB337D6 = new global::System.Data.DataRelation("FK__REL_Idiom__IdIdi__5FB337D6", new global::System.Data.DataColumn[] {
                         this.tableIdiomas.IdIdiomaColumn}, new global::System.Data.DataColumn[] {
                         this.tableREL_Idioma_Candidatos.IdIdioma_Rel_Idioma_CandidatosColumn}, false);
-            this.Relations.Add(this.relationFK__REL_Idiom__IdIdi__2F9A1060);
-            this.relationFK__Usuarios__IdPers__18B6AB08 = new global::System.Data.DataRelation("FK__Usuarios__IdPers__18B6AB08", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__REL_Idiom__IdIdi__5FB337D6);
+            this.relationFK__Usuarios__IdPers__6383C8BA = new global::System.Data.DataRelation("FK__Usuarios__IdPers__6383C8BA", new global::System.Data.DataColumn[] {
                         this.tablePersonas.IdPersonaColumn}, new global::System.Data.DataColumn[] {
                         this.tableUsuarios.IdPersona_UsuariosColumn}, false);
-            this.Relations.Add(this.relationFK__Usuarios__IdPers__18B6AB08);
+            this.Relations.Add(this.relationFK__Usuarios__IdPers__6383C8BA);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -955,7 +955,7 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public CandidatosRow AddCandidatosRow(PersonasRow parentPersonasRowByFK__Candidato__IdPer__00DF2177, PuestosRow parentPuestosRowByFK__Candidato__Puest__01D345B0, decimal SalarioAspirado_Candidatos, string Recomendacion_Candidatos, bool Estado_Candidatos) {
+            public CandidatosRow AddCandidatosRow(PersonasRow parentPersonasRowByFK__Candidato__IdPer__4AB81AF0, PuestosRow parentPuestosRowByFK__Candidato__Puest__4BAC3F29, decimal SalarioAspirado_Candidatos, string Recomendacion_Candidatos, bool Estado_Candidatos) {
                 CandidatosRow rowCandidatosRow = ((CandidatosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -964,11 +964,11 @@ namespace RRHHProyectoFinal {
                         SalarioAspirado_Candidatos,
                         Recomendacion_Candidatos,
                         Estado_Candidatos};
-                if ((parentPersonasRowByFK__Candidato__IdPer__00DF2177 != null)) {
-                    columnValuesArray[1] = parentPersonasRowByFK__Candidato__IdPer__00DF2177[0];
+                if ((parentPersonasRowByFK__Candidato__IdPer__4AB81AF0 != null)) {
+                    columnValuesArray[1] = parentPersonasRowByFK__Candidato__IdPer__4AB81AF0[0];
                 }
-                if ((parentPuestosRowByFK__Candidato__Puest__01D345B0 != null)) {
-                    columnValuesArray[2] = parentPuestosRowByFK__Candidato__Puest__01D345B0[0];
+                if ((parentPuestosRowByFK__Candidato__Puest__4BAC3F29 != null)) {
+                    columnValuesArray[2] = parentPuestosRowByFK__Candidato__Puest__4BAC3F29[0];
                 }
                 rowCandidatosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCandidatosRow);
@@ -2221,7 +2221,7 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public EmpleadosRow AddEmpleadosRow(PersonasRow parentPersonasRowByFK__Empleados__IdPer__0880433F, System.DateTime FechaIngreso_Empleados, PuestosRow parentPuestosRowByFK__Empleados__IdPue__09746778, decimal Salario_Empleados, bool Estado_Empleados) {
+            public EmpleadosRow AddEmpleadosRow(PersonasRow parentPersonasRowByFK__Empleados__IdPer__52593CB8, System.DateTime FechaIngreso_Empleados, PuestosRow parentPuestosRowByFK__Empleados__IdPue__534D60F1, decimal Salario_Empleados, bool Estado_Empleados) {
                 EmpleadosRow rowEmpleadosRow = ((EmpleadosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2230,11 +2230,11 @@ namespace RRHHProyectoFinal {
                         null,
                         Salario_Empleados,
                         Estado_Empleados};
-                if ((parentPersonasRowByFK__Empleados__IdPer__0880433F != null)) {
-                    columnValuesArray[1] = parentPersonasRowByFK__Empleados__IdPer__0880433F[0];
+                if ((parentPersonasRowByFK__Empleados__IdPer__52593CB8 != null)) {
+                    columnValuesArray[1] = parentPersonasRowByFK__Empleados__IdPer__52593CB8[0];
                 }
-                if ((parentPuestosRowByFK__Empleados__IdPue__09746778 != null)) {
-                    columnValuesArray[3] = parentPuestosRowByFK__Empleados__IdPue__09746778[0];
+                if ((parentPuestosRowByFK__Empleados__IdPue__534D60F1 != null)) {
+                    columnValuesArray[3] = parentPuestosRowByFK__Empleados__IdPue__534D60F1[0];
                 }
                 rowEmpleadosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEmpleadosRow);
@@ -2573,7 +2573,7 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ExpLaboralesRow AddExpLaboralesRow(PersonasRow parentPersonasRowByFK__ExpLabora__IdPer__05A3D694, string Empresa_ExpLaborales, string PuestoOcupado_ExpLaborales, System.DateTime FechaDesde_ExpLaborales, System.DateTime FechaHasta_ExpLaborales, decimal Salario_ExpLaborales) {
+            public ExpLaboralesRow AddExpLaboralesRow(PersonasRow parentPersonasRowByFK__ExpLabora__IdPer__4F7CD00D, string Empresa_ExpLaborales, string PuestoOcupado_ExpLaborales, System.DateTime FechaDesde_ExpLaborales, System.DateTime FechaHasta_ExpLaborales, decimal Salario_ExpLaborales) {
                 ExpLaboralesRow rowExpLaboralesRow = ((ExpLaboralesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2583,8 +2583,8 @@ namespace RRHHProyectoFinal {
                         FechaDesde_ExpLaborales,
                         FechaHasta_ExpLaborales,
                         Salario_ExpLaborales};
-                if ((parentPersonasRowByFK__ExpLabora__IdPer__05A3D694 != null)) {
-                    columnValuesArray[1] = parentPersonasRowByFK__ExpLabora__IdPer__05A3D694[0];
+                if ((parentPersonasRowByFK__ExpLabora__IdPer__4F7CD00D != null)) {
+                    columnValuesArray[1] = parentPersonasRowByFK__ExpLabora__IdPer__4F7CD00D[0];
                 }
                 rowExpLaboralesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowExpLaboralesRow);
@@ -3547,7 +3547,7 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public PuestosRow AddPuestosRow(string Nombre_Puestos, DepartamentosRow parentDepartamentosRowByFK__Puestos__IdDepar__793DFFAF, string NivelRiesgo_Puestos, decimal SalarioMinimo_Puestos, decimal SalarioMaximo_Puestos, bool Estado_Puestos) {
+            public PuestosRow AddPuestosRow(string Nombre_Puestos, DepartamentosRow parentDepartamentosRowByFK__Puestos__IdDepar__4316F928, string NivelRiesgo_Puestos, decimal SalarioMinimo_Puestos, decimal SalarioMaximo_Puestos, bool Estado_Puestos) {
                 PuestosRow rowPuestosRow = ((PuestosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3557,8 +3557,8 @@ namespace RRHHProyectoFinal {
                         SalarioMinimo_Puestos,
                         SalarioMaximo_Puestos,
                         Estado_Puestos};
-                if ((parentDepartamentosRowByFK__Puestos__IdDepar__793DFFAF != null)) {
-                    columnValuesArray[2] = parentDepartamentosRowByFK__Puestos__IdDepar__793DFFAF[0];
+                if ((parentDepartamentosRowByFK__Puestos__IdDepar__4316F928 != null)) {
+                    columnValuesArray[2] = parentDepartamentosRowByFK__Puestos__IdDepar__4316F928[0];
                 }
                 rowPuestosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPuestosRow);
@@ -3862,17 +3862,17 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public REL_Capacitaciones_CandidatosRow AddREL_Capacitaciones_CandidatosRow(CandidatosRow parentCandidatosRowByFK__REL_Capac__IdCan__32767D0B, CapacitacionesRow parentCapacitacionesRowByFK__REL_Capac__IdCap__336AA144) {
+            public REL_Capacitaciones_CandidatosRow AddREL_Capacitaciones_CandidatosRow(CandidatosRow parentCandidatosRowByFK__REL_Capac__IdCan__5AEE82B9, CapacitacionesRow parentCapacitacionesRowByFK__REL_Capac__IdCap__5BE2A6F2) {
                 REL_Capacitaciones_CandidatosRow rowREL_Capacitaciones_CandidatosRow = ((REL_Capacitaciones_CandidatosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null};
-                if ((parentCandidatosRowByFK__REL_Capac__IdCan__32767D0B != null)) {
-                    columnValuesArray[1] = parentCandidatosRowByFK__REL_Capac__IdCan__32767D0B[0];
+                if ((parentCandidatosRowByFK__REL_Capac__IdCan__5AEE82B9 != null)) {
+                    columnValuesArray[1] = parentCandidatosRowByFK__REL_Capac__IdCan__5AEE82B9[0];
                 }
-                if ((parentCapacitacionesRowByFK__REL_Capac__IdCap__336AA144 != null)) {
-                    columnValuesArray[2] = parentCapacitacionesRowByFK__REL_Capac__IdCap__336AA144[0];
+                if ((parentCapacitacionesRowByFK__REL_Capac__IdCap__5BE2A6F2 != null)) {
+                    columnValuesArray[2] = parentCapacitacionesRowByFK__REL_Capac__IdCap__5BE2A6F2[0];
                 }
                 rowREL_Capacitaciones_CandidatosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowREL_Capacitaciones_CandidatosRow);
@@ -3881,8 +3881,9 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public REL_Capacitaciones_CandidatosRow FindByIdCandidato_Rel_Capacitaciones_CandidatosIdCapacitacion_Rel_Capacitaciones_Candidatos(int IdCandidato_Rel_Capacitaciones_Candidatos, int IdCapacitacion_Rel_Capacitaciones_Candidatos) {
+            public REL_Capacitaciones_CandidatosRow FindByIdRel_Capacitaciones_CandidatosIdCandidato_Rel_Capacitaciones_CandidatosIdCapacitacion_Rel_Capacitaciones_Candidatos(int IdRel_Capacitaciones_Candidatos, int IdCandidato_Rel_Capacitaciones_Candidatos, int IdCapacitacion_Rel_Capacitaciones_Candidatos) {
                 return ((REL_Capacitaciones_CandidatosRow)(this.Rows.Find(new object[] {
+                            IdRel_Capacitaciones_Candidatos,
                             IdCandidato_Rel_Capacitaciones_Candidatos,
                             IdCapacitacion_Rel_Capacitaciones_Candidatos})));
             }
@@ -3919,6 +3920,7 @@ namespace RRHHProyectoFinal {
                 this.columnIdCapacitacion_Rel_Capacitaciones_Candidatos = new global::System.Data.DataColumn("IdCapacitacion_Rel_Capacitaciones_Candidatos", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIdCapacitacion_Rel_Capacitaciones_Candidatos);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnIdRel_Capacitaciones_Candidatos,
                                 this.columnIdCandidato_Rel_Capacitaciones_Candidatos,
                                 this.columnIdCapacitacion_Rel_Capacitaciones_Candidatos}, true));
                 this.columnIdRel_Capacitaciones_Candidatos.AutoIncrement = true;
@@ -4161,17 +4163,17 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public REL_Competencias_CandidatosRow AddREL_Competencias_CandidatosRow(CandidatosRow parentCandidatosRowByFK__REL_Compe__IdCan__0D44F85C, CompetenciasRow parentCompetenciasRowByFK__REL_Compe__IdCom__0E391C95) {
+            public REL_Competencias_CandidatosRow AddREL_Competencias_CandidatosRow(CandidatosRow parentCandidatosRowByFK__REL_Compe__IdCan__571DF1D5, CompetenciasRow parentCompetenciasRowByFK__REL_Compe__IdCom__5812160E) {
                 REL_Competencias_CandidatosRow rowREL_Competencias_CandidatosRow = ((REL_Competencias_CandidatosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null};
-                if ((parentCandidatosRowByFK__REL_Compe__IdCan__0D44F85C != null)) {
-                    columnValuesArray[1] = parentCandidatosRowByFK__REL_Compe__IdCan__0D44F85C[0];
+                if ((parentCandidatosRowByFK__REL_Compe__IdCan__571DF1D5 != null)) {
+                    columnValuesArray[1] = parentCandidatosRowByFK__REL_Compe__IdCan__571DF1D5[0];
                 }
-                if ((parentCompetenciasRowByFK__REL_Compe__IdCom__0E391C95 != null)) {
-                    columnValuesArray[2] = parentCompetenciasRowByFK__REL_Compe__IdCom__0E391C95[0];
+                if ((parentCompetenciasRowByFK__REL_Compe__IdCom__5812160E != null)) {
+                    columnValuesArray[2] = parentCompetenciasRowByFK__REL_Compe__IdCom__5812160E[0];
                 }
                 rowREL_Competencias_CandidatosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowREL_Competencias_CandidatosRow);
@@ -4180,8 +4182,9 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public REL_Competencias_CandidatosRow FindByIdCandidato_Rel_Competencias_CandidatosIdCompetencia_Rel_Competencias_Candidatos(int IdCandidato_Rel_Competencias_Candidatos, int IdCompetencia_Rel_Competencias_Candidatos) {
+            public REL_Competencias_CandidatosRow FindByIdRel_Competencias_CandidatosIdCandidato_Rel_Competencias_CandidatosIdCompetencia_Rel_Competencias_Candidatos(int IdRel_Competencias_Candidatos, int IdCandidato_Rel_Competencias_Candidatos, int IdCompetencia_Rel_Competencias_Candidatos) {
                 return ((REL_Competencias_CandidatosRow)(this.Rows.Find(new object[] {
+                            IdRel_Competencias_Candidatos,
                             IdCandidato_Rel_Competencias_Candidatos,
                             IdCompetencia_Rel_Competencias_Candidatos})));
             }
@@ -4218,6 +4221,7 @@ namespace RRHHProyectoFinal {
                 this.columnIdCompetencia_Rel_Competencias_Candidatos = new global::System.Data.DataColumn("IdCompetencia_Rel_Competencias_Candidatos", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIdCompetencia_Rel_Competencias_Candidatos);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnIdRel_Competencias_Candidatos,
                                 this.columnIdCandidato_Rel_Competencias_Candidatos,
                                 this.columnIdCompetencia_Rel_Competencias_Candidatos}, true));
                 this.columnIdRel_Competencias_Candidatos.AutoIncrement = true;
@@ -4460,17 +4464,17 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public REL_Idioma_CandidatosRow AddREL_Idioma_CandidatosRow(CandidatosRow parentCandidatosRowByFK__REL_Idiom__IdCan__2EA5EC27, IdiomasRow parentIdiomasRowByFK__REL_Idiom__IdIdi__2F9A1060) {
+            public REL_Idioma_CandidatosRow AddREL_Idioma_CandidatosRow(CandidatosRow parentCandidatosRowByFK__REL_Idiom__IdCan__5EBF139D, IdiomasRow parentIdiomasRowByFK__REL_Idiom__IdIdi__5FB337D6) {
                 REL_Idioma_CandidatosRow rowREL_Idioma_CandidatosRow = ((REL_Idioma_CandidatosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null};
-                if ((parentCandidatosRowByFK__REL_Idiom__IdCan__2EA5EC27 != null)) {
-                    columnValuesArray[1] = parentCandidatosRowByFK__REL_Idiom__IdCan__2EA5EC27[0];
+                if ((parentCandidatosRowByFK__REL_Idiom__IdCan__5EBF139D != null)) {
+                    columnValuesArray[1] = parentCandidatosRowByFK__REL_Idiom__IdCan__5EBF139D[0];
                 }
-                if ((parentIdiomasRowByFK__REL_Idiom__IdIdi__2F9A1060 != null)) {
-                    columnValuesArray[2] = parentIdiomasRowByFK__REL_Idiom__IdIdi__2F9A1060[0];
+                if ((parentIdiomasRowByFK__REL_Idiom__IdIdi__5FB337D6 != null)) {
+                    columnValuesArray[2] = parentIdiomasRowByFK__REL_Idiom__IdIdi__5FB337D6[0];
                 }
                 rowREL_Idioma_CandidatosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowREL_Idioma_CandidatosRow);
@@ -4479,8 +4483,9 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public REL_Idioma_CandidatosRow FindByIdCandidato_Rel_Idioma_CandidatosIdIdioma_Rel_Idioma_Candidatos(int IdCandidato_Rel_Idioma_Candidatos, int IdIdioma_Rel_Idioma_Candidatos) {
+            public REL_Idioma_CandidatosRow FindByIdRel_Idiomas_CandidatosIdCandidato_Rel_Idioma_CandidatosIdIdioma_Rel_Idioma_Candidatos(int IdRel_Idiomas_Candidatos, int IdCandidato_Rel_Idioma_Candidatos, int IdIdioma_Rel_Idioma_Candidatos) {
                 return ((REL_Idioma_CandidatosRow)(this.Rows.Find(new object[] {
+                            IdRel_Idiomas_Candidatos,
                             IdCandidato_Rel_Idioma_Candidatos,
                             IdIdioma_Rel_Idioma_Candidatos})));
             }
@@ -4517,6 +4522,7 @@ namespace RRHHProyectoFinal {
                 this.columnIdIdioma_Rel_Idioma_Candidatos = new global::System.Data.DataColumn("IdIdioma_Rel_Idioma_Candidatos", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIdIdioma_Rel_Idioma_Candidatos);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnIdRel_Idiomas_Candidatos,
                                 this.columnIdCandidato_Rel_Idioma_Candidatos,
                                 this.columnIdIdioma_Rel_Idioma_Candidatos}, true));
                 this.columnIdRel_Idiomas_Candidatos.AutoIncrement = true;
@@ -4789,7 +4795,7 @@ namespace RRHHProyectoFinal {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public UsuariosRow AddUsuariosRow(string Email_Usuarios, string Contrasena_Usuarios, string NombreUsuario_Usuarios, PersonasRow parentPersonasRowByFK__Usuarios__IdPers__18B6AB08, string Roles_Usuarios) {
+            public UsuariosRow AddUsuariosRow(string Email_Usuarios, string Contrasena_Usuarios, string NombreUsuario_Usuarios, PersonasRow parentPersonasRowByFK__Usuarios__IdPers__6383C8BA, string Roles_Usuarios) {
                 UsuariosRow rowUsuariosRow = ((UsuariosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -4798,8 +4804,8 @@ namespace RRHHProyectoFinal {
                         NombreUsuario_Usuarios,
                         null,
                         Roles_Usuarios};
-                if ((parentPersonasRowByFK__Usuarios__IdPers__18B6AB08 != null)) {
-                    columnValuesArray[4] = parentPersonasRowByFK__Usuarios__IdPers__18B6AB08[0];
+                if ((parentPersonasRowByFK__Usuarios__IdPers__6383C8BA != null)) {
+                    columnValuesArray[4] = parentPersonasRowByFK__Usuarios__IdPers__6383C8BA[0];
                 }
                 rowUsuariosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowUsuariosRow);
@@ -5462,10 +5468,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public PersonasRow PersonasRow {
                 get {
-                    return ((PersonasRow)(this.GetParentRow(this.Table.ParentRelations["FK__Candidato__IdPer__00DF2177"])));
+                    return ((PersonasRow)(this.GetParentRow(this.Table.ParentRelations["FK__Candidato__IdPer__4AB81AF0"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Candidato__IdPer__00DF2177"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Candidato__IdPer__4AB81AF0"]);
                 }
             }
             
@@ -5473,10 +5479,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public PuestosRow PuestosRow {
                 get {
-                    return ((PuestosRow)(this.GetParentRow(this.Table.ParentRelations["FK__Candidato__Puest__01D345B0"])));
+                    return ((PuestosRow)(this.GetParentRow(this.Table.ParentRelations["FK__Candidato__Puest__4BAC3F29"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Candidato__Puest__01D345B0"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Candidato__Puest__4BAC3F29"]);
                 }
             }
             
@@ -5507,33 +5513,33 @@ namespace RRHHProyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public REL_Capacitaciones_CandidatosRow[] GetREL_Capacitaciones_CandidatosRows() {
-                if ((this.Table.ChildRelations["FK__REL_Capac__IdCan__32767D0B"] == null)) {
+                if ((this.Table.ChildRelations["FK__REL_Capac__IdCan__5AEE82B9"] == null)) {
                     return new REL_Capacitaciones_CandidatosRow[0];
                 }
                 else {
-                    return ((REL_Capacitaciones_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Capac__IdCan__32767D0B"])));
+                    return ((REL_Capacitaciones_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Capac__IdCan__5AEE82B9"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public REL_Competencias_CandidatosRow[] GetREL_Competencias_CandidatosRows() {
-                if ((this.Table.ChildRelations["FK__REL_Compe__IdCan__0D44F85C"] == null)) {
+                if ((this.Table.ChildRelations["FK__REL_Compe__IdCan__571DF1D5"] == null)) {
                     return new REL_Competencias_CandidatosRow[0];
                 }
                 else {
-                    return ((REL_Competencias_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Compe__IdCan__0D44F85C"])));
+                    return ((REL_Competencias_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Compe__IdCan__571DF1D5"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public REL_Idioma_CandidatosRow[] GetREL_Idioma_CandidatosRows() {
-                if ((this.Table.ChildRelations["FK__REL_Idiom__IdCan__2EA5EC27"] == null)) {
+                if ((this.Table.ChildRelations["FK__REL_Idiom__IdCan__5EBF139D"] == null)) {
                     return new REL_Idioma_CandidatosRow[0];
                 }
                 else {
-                    return ((REL_Idioma_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Idiom__IdCan__2EA5EC27"])));
+                    return ((REL_Idioma_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Idiom__IdCan__5EBF139D"])));
                 }
             }
         }
@@ -5621,11 +5627,11 @@ namespace RRHHProyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public REL_Capacitaciones_CandidatosRow[] GetREL_Capacitaciones_CandidatosRows() {
-                if ((this.Table.ChildRelations["FK__REL_Capac__IdCap__336AA144"] == null)) {
+                if ((this.Table.ChildRelations["FK__REL_Capac__IdCap__5BE2A6F2"] == null)) {
                     return new REL_Capacitaciones_CandidatosRow[0];
                 }
                 else {
-                    return ((REL_Capacitaciones_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Capac__IdCap__336AA144"])));
+                    return ((REL_Capacitaciones_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Capac__IdCap__5BE2A6F2"])));
                 }
             }
         }
@@ -5698,11 +5704,11 @@ namespace RRHHProyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public REL_Competencias_CandidatosRow[] GetREL_Competencias_CandidatosRows() {
-                if ((this.Table.ChildRelations["FK__REL_Compe__IdCom__0E391C95"] == null)) {
+                if ((this.Table.ChildRelations["FK__REL_Compe__IdCom__5812160E"] == null)) {
                     return new REL_Competencias_CandidatosRow[0];
                 }
                 else {
-                    return ((REL_Competencias_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Compe__IdCom__0E391C95"])));
+                    return ((REL_Competencias_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Compe__IdCom__5812160E"])));
                 }
             }
         }
@@ -5775,11 +5781,11 @@ namespace RRHHProyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public PuestosRow[] GetPuestosRows() {
-                if ((this.Table.ChildRelations["FK__Puestos__IdDepar__793DFFAF"] == null)) {
+                if ((this.Table.ChildRelations["FK__Puestos__IdDepar__4316F928"] == null)) {
                     return new PuestosRow[0];
                 }
                 else {
-                    return ((PuestosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Puestos__IdDepar__793DFFAF"])));
+                    return ((PuestosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Puestos__IdDepar__4316F928"])));
                 }
             }
         }
@@ -5873,10 +5879,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public PersonasRow PersonasRow {
                 get {
-                    return ((PersonasRow)(this.GetParentRow(this.Table.ParentRelations["FK__Empleados__IdPer__0880433F"])));
+                    return ((PersonasRow)(this.GetParentRow(this.Table.ParentRelations["FK__Empleados__IdPer__52593CB8"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Empleados__IdPer__0880433F"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Empleados__IdPer__52593CB8"]);
                 }
             }
             
@@ -5884,10 +5890,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public PuestosRow PuestosRow {
                 get {
-                    return ((PuestosRow)(this.GetParentRow(this.Table.ParentRelations["FK__Empleados__IdPue__09746778"])));
+                    return ((PuestosRow)(this.GetParentRow(this.Table.ParentRelations["FK__Empleados__IdPue__534D60F1"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Empleados__IdPue__09746778"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Empleados__IdPue__534D60F1"]);
                 }
             }
             
@@ -5999,10 +6005,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public PersonasRow PersonasRow {
                 get {
-                    return ((PersonasRow)(this.GetParentRow(this.Table.ParentRelations["FK__ExpLabora__IdPer__05A3D694"])));
+                    return ((PersonasRow)(this.GetParentRow(this.Table.ParentRelations["FK__ExpLabora__IdPer__4F7CD00D"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__ExpLabora__IdPer__05A3D694"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__ExpLabora__IdPer__4F7CD00D"]);
                 }
             }
         }
@@ -6074,11 +6080,11 @@ namespace RRHHProyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public REL_Idioma_CandidatosRow[] GetREL_Idioma_CandidatosRows() {
-                if ((this.Table.ChildRelations["FK__REL_Idiom__IdIdi__2F9A1060"] == null)) {
+                if ((this.Table.ChildRelations["FK__REL_Idiom__IdIdi__5FB337D6"] == null)) {
                     return new REL_Idioma_CandidatosRow[0];
                 }
                 else {
-                    return ((REL_Idioma_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Idiom__IdIdi__2F9A1060"])));
+                    return ((REL_Idioma_CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__REL_Idiom__IdIdi__5FB337D6"])));
                 }
             }
         }
@@ -6172,44 +6178,44 @@ namespace RRHHProyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CandidatosRow[] GetCandidatosRows() {
-                if ((this.Table.ChildRelations["FK__Candidato__IdPer__00DF2177"] == null)) {
+                if ((this.Table.ChildRelations["FK__Candidato__IdPer__4AB81AF0"] == null)) {
                     return new CandidatosRow[0];
                 }
                 else {
-                    return ((CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Candidato__IdPer__00DF2177"])));
+                    return ((CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Candidato__IdPer__4AB81AF0"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public EmpleadosRow[] GetEmpleadosRows() {
-                if ((this.Table.ChildRelations["FK__Empleados__IdPer__0880433F"] == null)) {
+                if ((this.Table.ChildRelations["FK__Empleados__IdPer__52593CB8"] == null)) {
                     return new EmpleadosRow[0];
                 }
                 else {
-                    return ((EmpleadosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Empleados__IdPer__0880433F"])));
+                    return ((EmpleadosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Empleados__IdPer__52593CB8"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public ExpLaboralesRow[] GetExpLaboralesRows() {
-                if ((this.Table.ChildRelations["FK__ExpLabora__IdPer__05A3D694"] == null)) {
+                if ((this.Table.ChildRelations["FK__ExpLabora__IdPer__4F7CD00D"] == null)) {
                     return new ExpLaboralesRow[0];
                 }
                 else {
-                    return ((ExpLaboralesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__ExpLabora__IdPer__05A3D694"])));
+                    return ((ExpLaboralesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__ExpLabora__IdPer__4F7CD00D"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public UsuariosRow[] GetUsuariosRows() {
-                if ((this.Table.ChildRelations["FK__Usuarios__IdPers__18B6AB08"] == null)) {
+                if ((this.Table.ChildRelations["FK__Usuarios__IdPers__6383C8BA"] == null)) {
                     return new UsuariosRow[0];
                 }
                 else {
-                    return ((UsuariosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Usuarios__IdPers__18B6AB08"])));
+                    return ((UsuariosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Usuarios__IdPers__6383C8BA"])));
                 }
             }
         }
@@ -6319,10 +6325,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DepartamentosRow DepartamentosRow {
                 get {
-                    return ((DepartamentosRow)(this.GetParentRow(this.Table.ParentRelations["FK__Puestos__IdDepar__793DFFAF"])));
+                    return ((DepartamentosRow)(this.GetParentRow(this.Table.ParentRelations["FK__Puestos__IdDepar__4316F928"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Puestos__IdDepar__793DFFAF"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Puestos__IdDepar__4316F928"]);
                 }
             }
             
@@ -6353,22 +6359,22 @@ namespace RRHHProyectoFinal {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CandidatosRow[] GetCandidatosRows() {
-                if ((this.Table.ChildRelations["FK__Candidato__Puest__01D345B0"] == null)) {
+                if ((this.Table.ChildRelations["FK__Candidato__Puest__4BAC3F29"] == null)) {
                     return new CandidatosRow[0];
                 }
                 else {
-                    return ((CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Candidato__Puest__01D345B0"])));
+                    return ((CandidatosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Candidato__Puest__4BAC3F29"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public EmpleadosRow[] GetEmpleadosRows() {
-                if ((this.Table.ChildRelations["FK__Empleados__IdPue__09746778"] == null)) {
+                if ((this.Table.ChildRelations["FK__Empleados__IdPue__534D60F1"] == null)) {
                     return new EmpleadosRow[0];
                 }
                 else {
-                    return ((EmpleadosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Empleados__IdPue__09746778"])));
+                    return ((EmpleadosRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Empleados__IdPue__534D60F1"])));
                 }
             }
         }
@@ -6424,10 +6430,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CandidatosRow CandidatosRow {
                 get {
-                    return ((CandidatosRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Capac__IdCan__32767D0B"])));
+                    return ((CandidatosRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Capac__IdCan__5AEE82B9"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Capac__IdCan__32767D0B"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Capac__IdCan__5AEE82B9"]);
                 }
             }
             
@@ -6435,10 +6441,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CapacitacionesRow CapacitacionesRow {
                 get {
-                    return ((CapacitacionesRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Capac__IdCap__336AA144"])));
+                    return ((CapacitacionesRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Capac__IdCap__5BE2A6F2"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Capac__IdCap__336AA144"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Capac__IdCap__5BE2A6F2"]);
                 }
             }
         }
@@ -6494,10 +6500,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CandidatosRow CandidatosRow {
                 get {
-                    return ((CandidatosRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Compe__IdCan__0D44F85C"])));
+                    return ((CandidatosRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Compe__IdCan__571DF1D5"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Compe__IdCan__0D44F85C"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Compe__IdCan__571DF1D5"]);
                 }
             }
             
@@ -6505,10 +6511,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CompetenciasRow CompetenciasRow {
                 get {
-                    return ((CompetenciasRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Compe__IdCom__0E391C95"])));
+                    return ((CompetenciasRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Compe__IdCom__5812160E"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Compe__IdCom__0E391C95"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Compe__IdCom__5812160E"]);
                 }
             }
         }
@@ -6564,10 +6570,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CandidatosRow CandidatosRow {
                 get {
-                    return ((CandidatosRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Idiom__IdCan__2EA5EC27"])));
+                    return ((CandidatosRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Idiom__IdCan__5EBF139D"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Idiom__IdCan__2EA5EC27"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Idiom__IdCan__5EBF139D"]);
                 }
             }
             
@@ -6575,10 +6581,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public IdiomasRow IdiomasRow {
                 get {
-                    return ((IdiomasRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Idiom__IdIdi__2F9A1060"])));
+                    return ((IdiomasRow)(this.GetParentRow(this.Table.ParentRelations["FK__REL_Idiom__IdIdi__5FB337D6"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Idiom__IdIdi__2F9A1060"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__REL_Idiom__IdIdi__5FB337D6"]);
                 }
             }
         }
@@ -6667,10 +6673,10 @@ namespace RRHHProyectoFinal {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public PersonasRow PersonasRow {
                 get {
-                    return ((PersonasRow)(this.GetParentRow(this.Table.ParentRelations["FK__Usuarios__IdPers__18B6AB08"])));
+                    return ((PersonasRow)(this.GetParentRow(this.Table.ParentRelations["FK__Usuarios__IdPers__6383C8BA"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Usuarios__IdPers__18B6AB08"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Usuarios__IdPers__6383C8BA"]);
                 }
             }
         }
@@ -10853,20 +10859,21 @@ SELECT IdPuesto, Nombre_Puestos, IdDepartamento_Puestos, NivelRiesgo_Puestos, Sa
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[REL_Capacitaciones_Candidatos] ([IdCandidato_Rel_Capacitaciones_Candidatos], [IdCapacitacion_Rel_Capacitaciones_Candidatos]) VALUES (@IdCandidato_Rel_Capacitaciones_Candidatos, @IdCapacitacion_Rel_Capacitaciones_Candidatos);
-SELECT IdRel_Capacitaciones_Candidatos, IdCandidato_Rel_Capacitaciones_Candidatos, IdCapacitacion_Rel_Capacitaciones_Candidatos FROM REL_Capacitaciones_Candidatos WHERE (IdCandidato_Rel_Capacitaciones_Candidatos = @IdCandidato_Rel_Capacitaciones_Candidatos) AND (IdCapacitacion_Rel_Capacitaciones_Candidatos = @IdCapacitacion_Rel_Capacitaciones_Candidatos)";
+SELECT IdRel_Capacitaciones_Candidatos, IdCandidato_Rel_Capacitaciones_Candidatos, IdCapacitacion_Rel_Capacitaciones_Candidatos FROM REL_Capacitaciones_Candidatos WHERE (IdCandidato_Rel_Capacitaciones_Candidatos = @IdCandidato_Rel_Capacitaciones_Candidatos) AND (IdCapacitacion_Rel_Capacitaciones_Candidatos = @IdCapacitacion_Rel_Capacitaciones_Candidatos) AND (IdRel_Capacitaciones_Candidatos = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCandidato_Rel_Capacitaciones_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCandidato_Rel_Capacitaciones_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCapacitacion_Rel_Capacitaciones_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCapacitacion_Rel_Capacitaciones_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[REL_Capacitaciones_Candidatos] SET [IdCandidato_Rel_Capacitaciones_Candidatos] = @IdCandidato_Rel_Capacitaciones_Candidatos, [IdCapacitacion_Rel_Capacitaciones_Candidatos] = @IdCapacitacion_Rel_Capacitaciones_Candidatos WHERE (([IdRel_Capacitaciones_Candidatos] = @Original_IdRel_Capacitaciones_Candidatos) AND ([IdCandidato_Rel_Capacitaciones_Candidatos] = @Original_IdCandidato_Rel_Capacitaciones_Candidatos) AND ([IdCapacitacion_Rel_Capacitaciones_Candidatos] = @Original_IdCapacitacion_Rel_Capacitaciones_Candidatos));
-SELECT IdRel_Capacitaciones_Candidatos, IdCandidato_Rel_Capacitaciones_Candidatos, IdCapacitacion_Rel_Capacitaciones_Candidatos FROM REL_Capacitaciones_Candidatos WHERE (IdCandidato_Rel_Capacitaciones_Candidatos = @IdCandidato_Rel_Capacitaciones_Candidatos) AND (IdCapacitacion_Rel_Capacitaciones_Candidatos = @IdCapacitacion_Rel_Capacitaciones_Candidatos)";
+SELECT IdRel_Capacitaciones_Candidatos, IdCandidato_Rel_Capacitaciones_Candidatos, IdCapacitacion_Rel_Capacitaciones_Candidatos FROM REL_Capacitaciones_Candidatos WHERE (IdCandidato_Rel_Capacitaciones_Candidatos = @IdCandidato_Rel_Capacitaciones_Candidatos) AND (IdCapacitacion_Rel_Capacitaciones_Candidatos = @IdCapacitacion_Rel_Capacitaciones_Candidatos) AND (IdRel_Capacitaciones_Candidatos = @IdRel_Capacitaciones_Candidatos)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCandidato_Rel_Capacitaciones_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCandidato_Rel_Capacitaciones_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCapacitacion_Rel_Capacitaciones_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCapacitacion_Rel_Capacitaciones_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdRel_Capacitaciones_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdRel_Capacitaciones_Candidatos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdCandidato_Rel_Capacitaciones_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCandidato_Rel_Capacitaciones_Candidatos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdCapacitacion_Rel_Capacitaciones_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCapacitacion_Rel_Capacitaciones_Candidatos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdRel_Capacitaciones_Candidatos", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IdRel_Capacitaciones_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10992,12 +10999,13 @@ SELECT IdRel_Capacitaciones_Candidatos, IdCandidato_Rel_Capacitaciones_Candidato
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int IdCandidato_Rel_Capacitaciones_Candidatos, int IdCapacitacion_Rel_Capacitaciones_Candidatos, int Original_IdRel_Capacitaciones_Candidatos, int Original_IdCandidato_Rel_Capacitaciones_Candidatos, int Original_IdCapacitacion_Rel_Capacitaciones_Candidatos) {
+        public virtual int Update(int IdCandidato_Rel_Capacitaciones_Candidatos, int IdCapacitacion_Rel_Capacitaciones_Candidatos, int Original_IdRel_Capacitaciones_Candidatos, int Original_IdCandidato_Rel_Capacitaciones_Candidatos, int Original_IdCapacitacion_Rel_Capacitaciones_Candidatos, int IdRel_Capacitaciones_Candidatos) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(IdCandidato_Rel_Capacitaciones_Candidatos));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(IdCapacitacion_Rel_Capacitaciones_Candidatos));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_IdRel_Capacitaciones_Candidatos));
             this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_IdCandidato_Rel_Capacitaciones_Candidatos));
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_IdCapacitacion_Rel_Capacitaciones_Candidatos));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(IdRel_Capacitaciones_Candidatos));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -11019,7 +11027,7 @@ SELECT IdRel_Capacitaciones_Candidatos, IdCandidato_Rel_Capacitaciones_Candidato
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(int Original_IdRel_Capacitaciones_Candidatos, int Original_IdCandidato_Rel_Capacitaciones_Candidatos, int Original_IdCapacitacion_Rel_Capacitaciones_Candidatos) {
-            return this.Update(Original_IdCandidato_Rel_Capacitaciones_Candidatos, Original_IdCapacitacion_Rel_Capacitaciones_Candidatos, Original_IdRel_Capacitaciones_Candidatos, Original_IdCandidato_Rel_Capacitaciones_Candidatos, Original_IdCapacitacion_Rel_Capacitaciones_Candidatos);
+            return this.Update(Original_IdCandidato_Rel_Capacitaciones_Candidatos, Original_IdCapacitacion_Rel_Capacitaciones_Candidatos, Original_IdRel_Capacitaciones_Candidatos, Original_IdCandidato_Rel_Capacitaciones_Candidatos, Original_IdCapacitacion_Rel_Capacitaciones_Candidatos, Original_IdRel_Capacitaciones_Candidatos);
         }
     }
     
@@ -11158,20 +11166,21 @@ SELECT IdRel_Capacitaciones_Candidatos, IdCandidato_Rel_Capacitaciones_Candidato
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[REL_Competencias_Candidatos] ([IdCandidato_Rel_Competencias_Candidatos], [IdCompetencia_Rel_Competencias_Candidatos]) VALUES (@IdCandidato_Rel_Competencias_Candidatos, @IdCompetencia_Rel_Competencias_Candidatos);
-SELECT IdRel_Competencias_Candidatos, IdCandidato_Rel_Competencias_Candidatos, IdCompetencia_Rel_Competencias_Candidatos FROM REL_Competencias_Candidatos WHERE (IdCandidato_Rel_Competencias_Candidatos = @IdCandidato_Rel_Competencias_Candidatos) AND (IdCompetencia_Rel_Competencias_Candidatos = @IdCompetencia_Rel_Competencias_Candidatos)";
+SELECT IdRel_Competencias_Candidatos, IdCandidato_Rel_Competencias_Candidatos, IdCompetencia_Rel_Competencias_Candidatos FROM REL_Competencias_Candidatos WHERE (IdCandidato_Rel_Competencias_Candidatos = @IdCandidato_Rel_Competencias_Candidatos) AND (IdCompetencia_Rel_Competencias_Candidatos = @IdCompetencia_Rel_Competencias_Candidatos) AND (IdRel_Competencias_Candidatos = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCandidato_Rel_Competencias_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCandidato_Rel_Competencias_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCompetencia_Rel_Competencias_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCompetencia_Rel_Competencias_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[REL_Competencias_Candidatos] SET [IdCandidato_Rel_Competencias_Candidatos] = @IdCandidato_Rel_Competencias_Candidatos, [IdCompetencia_Rel_Competencias_Candidatos] = @IdCompetencia_Rel_Competencias_Candidatos WHERE (([IdRel_Competencias_Candidatos] = @Original_IdRel_Competencias_Candidatos) AND ([IdCandidato_Rel_Competencias_Candidatos] = @Original_IdCandidato_Rel_Competencias_Candidatos) AND ([IdCompetencia_Rel_Competencias_Candidatos] = @Original_IdCompetencia_Rel_Competencias_Candidatos));
-SELECT IdRel_Competencias_Candidatos, IdCandidato_Rel_Competencias_Candidatos, IdCompetencia_Rel_Competencias_Candidatos FROM REL_Competencias_Candidatos WHERE (IdCandidato_Rel_Competencias_Candidatos = @IdCandidato_Rel_Competencias_Candidatos) AND (IdCompetencia_Rel_Competencias_Candidatos = @IdCompetencia_Rel_Competencias_Candidatos)";
+SELECT IdRel_Competencias_Candidatos, IdCandidato_Rel_Competencias_Candidatos, IdCompetencia_Rel_Competencias_Candidatos FROM REL_Competencias_Candidatos WHERE (IdCandidato_Rel_Competencias_Candidatos = @IdCandidato_Rel_Competencias_Candidatos) AND (IdCompetencia_Rel_Competencias_Candidatos = @IdCompetencia_Rel_Competencias_Candidatos) AND (IdRel_Competencias_Candidatos = @IdRel_Competencias_Candidatos)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCandidato_Rel_Competencias_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCandidato_Rel_Competencias_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCompetencia_Rel_Competencias_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCompetencia_Rel_Competencias_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdRel_Competencias_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdRel_Competencias_Candidatos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdCandidato_Rel_Competencias_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCandidato_Rel_Competencias_Candidatos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdCompetencia_Rel_Competencias_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCompetencia_Rel_Competencias_Candidatos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdRel_Competencias_Candidatos", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IdRel_Competencias_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11296,12 +11305,13 @@ SELECT IdRel_Competencias_Candidatos, IdCandidato_Rel_Competencias_Candidatos, I
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int IdCandidato_Rel_Competencias_Candidatos, int IdCompetencia_Rel_Competencias_Candidatos, int Original_IdRel_Competencias_Candidatos, int Original_IdCandidato_Rel_Competencias_Candidatos, int Original_IdCompetencia_Rel_Competencias_Candidatos) {
+        public virtual int Update(int IdCandidato_Rel_Competencias_Candidatos, int IdCompetencia_Rel_Competencias_Candidatos, int Original_IdRel_Competencias_Candidatos, int Original_IdCandidato_Rel_Competencias_Candidatos, int Original_IdCompetencia_Rel_Competencias_Candidatos, int IdRel_Competencias_Candidatos) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(IdCandidato_Rel_Competencias_Candidatos));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(IdCompetencia_Rel_Competencias_Candidatos));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_IdRel_Competencias_Candidatos));
             this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_IdCandidato_Rel_Competencias_Candidatos));
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_IdCompetencia_Rel_Competencias_Candidatos));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(IdRel_Competencias_Candidatos));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -11323,7 +11333,7 @@ SELECT IdRel_Competencias_Candidatos, IdCandidato_Rel_Competencias_Candidatos, I
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(int Original_IdRel_Competencias_Candidatos, int Original_IdCandidato_Rel_Competencias_Candidatos, int Original_IdCompetencia_Rel_Competencias_Candidatos) {
-            return this.Update(Original_IdCandidato_Rel_Competencias_Candidatos, Original_IdCompetencia_Rel_Competencias_Candidatos, Original_IdRel_Competencias_Candidatos, Original_IdCandidato_Rel_Competencias_Candidatos, Original_IdCompetencia_Rel_Competencias_Candidatos);
+            return this.Update(Original_IdCandidato_Rel_Competencias_Candidatos, Original_IdCompetencia_Rel_Competencias_Candidatos, Original_IdRel_Competencias_Candidatos, Original_IdCandidato_Rel_Competencias_Candidatos, Original_IdCompetencia_Rel_Competencias_Candidatos, Original_IdRel_Competencias_Candidatos);
         }
     }
     
@@ -11462,20 +11472,21 @@ SELECT IdRel_Competencias_Candidatos, IdCandidato_Rel_Competencias_Candidatos, I
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[REL_Idioma_Candidatos] ([IdCandidato_Rel_Idioma_Candidatos], [IdIdioma_Rel_Idioma_Candidatos]) VALUES (@IdCandidato_Rel_Idioma_Candidatos, @IdIdioma_Rel_Idioma_Candidatos);
-SELECT IdRel_Idiomas_Candidatos, IdCandidato_Rel_Idioma_Candidatos, IdIdioma_Rel_Idioma_Candidatos FROM REL_Idioma_Candidatos WHERE (IdCandidato_Rel_Idioma_Candidatos = @IdCandidato_Rel_Idioma_Candidatos) AND (IdIdioma_Rel_Idioma_Candidatos = @IdIdioma_Rel_Idioma_Candidatos)";
+SELECT IdRel_Idiomas_Candidatos, IdCandidato_Rel_Idioma_Candidatos, IdIdioma_Rel_Idioma_Candidatos FROM REL_Idioma_Candidatos WHERE (IdCandidato_Rel_Idioma_Candidatos = @IdCandidato_Rel_Idioma_Candidatos) AND (IdIdioma_Rel_Idioma_Candidatos = @IdIdioma_Rel_Idioma_Candidatos) AND (IdRel_Idiomas_Candidatos = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCandidato_Rel_Idioma_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCandidato_Rel_Idioma_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdIdioma_Rel_Idioma_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdIdioma_Rel_Idioma_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[REL_Idioma_Candidatos] SET [IdCandidato_Rel_Idioma_Candidatos] = @IdCandidato_Rel_Idioma_Candidatos, [IdIdioma_Rel_Idioma_Candidatos] = @IdIdioma_Rel_Idioma_Candidatos WHERE (([IdRel_Idiomas_Candidatos] = @Original_IdRel_Idiomas_Candidatos) AND ([IdCandidato_Rel_Idioma_Candidatos] = @Original_IdCandidato_Rel_Idioma_Candidatos) AND ([IdIdioma_Rel_Idioma_Candidatos] = @Original_IdIdioma_Rel_Idioma_Candidatos));
-SELECT IdRel_Idiomas_Candidatos, IdCandidato_Rel_Idioma_Candidatos, IdIdioma_Rel_Idioma_Candidatos FROM REL_Idioma_Candidatos WHERE (IdCandidato_Rel_Idioma_Candidatos = @IdCandidato_Rel_Idioma_Candidatos) AND (IdIdioma_Rel_Idioma_Candidatos = @IdIdioma_Rel_Idioma_Candidatos)";
+SELECT IdRel_Idiomas_Candidatos, IdCandidato_Rel_Idioma_Candidatos, IdIdioma_Rel_Idioma_Candidatos FROM REL_Idioma_Candidatos WHERE (IdCandidato_Rel_Idioma_Candidatos = @IdCandidato_Rel_Idioma_Candidatos) AND (IdIdioma_Rel_Idioma_Candidatos = @IdIdioma_Rel_Idioma_Candidatos) AND (IdRel_Idiomas_Candidatos = @IdRel_Idiomas_Candidatos)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCandidato_Rel_Idioma_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCandidato_Rel_Idioma_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdIdioma_Rel_Idioma_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdIdioma_Rel_Idioma_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdRel_Idiomas_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdRel_Idiomas_Candidatos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdCandidato_Rel_Idioma_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdCandidato_Rel_Idioma_Candidatos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdIdioma_Rel_Idioma_Candidatos", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdIdioma_Rel_Idioma_Candidatos", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdRel_Idiomas_Candidatos", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IdRel_Idiomas_Candidatos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11600,12 +11611,13 @@ SELECT IdRel_Idiomas_Candidatos, IdCandidato_Rel_Idioma_Candidatos, IdIdioma_Rel
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int IdCandidato_Rel_Idioma_Candidatos, int IdIdioma_Rel_Idioma_Candidatos, int Original_IdRel_Idiomas_Candidatos, int Original_IdCandidato_Rel_Idioma_Candidatos, int Original_IdIdioma_Rel_Idioma_Candidatos) {
+        public virtual int Update(int IdCandidato_Rel_Idioma_Candidatos, int IdIdioma_Rel_Idioma_Candidatos, int Original_IdRel_Idiomas_Candidatos, int Original_IdCandidato_Rel_Idioma_Candidatos, int Original_IdIdioma_Rel_Idioma_Candidatos, int IdRel_Idiomas_Candidatos) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(IdCandidato_Rel_Idioma_Candidatos));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(IdIdioma_Rel_Idioma_Candidatos));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_IdRel_Idiomas_Candidatos));
             this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_IdCandidato_Rel_Idioma_Candidatos));
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_IdIdioma_Rel_Idioma_Candidatos));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(IdRel_Idiomas_Candidatos));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -11627,7 +11639,7 @@ SELECT IdRel_Idiomas_Candidatos, IdCandidato_Rel_Idioma_Candidatos, IdIdioma_Rel
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(int Original_IdRel_Idiomas_Candidatos, int Original_IdCandidato_Rel_Idioma_Candidatos, int Original_IdIdioma_Rel_Idioma_Candidatos) {
-            return this.Update(Original_IdCandidato_Rel_Idioma_Candidatos, Original_IdIdioma_Rel_Idioma_Candidatos, Original_IdRel_Idiomas_Candidatos, Original_IdCandidato_Rel_Idioma_Candidatos, Original_IdIdioma_Rel_Idioma_Candidatos);
+            return this.Update(Original_IdCandidato_Rel_Idioma_Candidatos, Original_IdIdioma_Rel_Idioma_Candidatos, Original_IdRel_Idiomas_Candidatos, Original_IdCandidato_Rel_Idioma_Candidatos, Original_IdIdioma_Rel_Idioma_Candidatos, Original_IdRel_Idiomas_Candidatos);
         }
     }
     

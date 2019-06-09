@@ -21,6 +21,8 @@ namespace RRHHProyectoFinal
 
         private void FrmSeleccionCandidato_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'rRHHDataSet.Candidatos' Puede moverla o quitarla según sea necesario.
+            
             LoadData();
         }
 
@@ -64,6 +66,7 @@ namespace RRHHProyectoFinal
             int row = DgvSeleccionCandidatos.CurrentCell.RowIndex;
             int idCandidato = (int)DgvSeleccionCandidatos[0, row].Value;
             Global.GlobalCandidatoID = idCandidato;
+
             FrmDetallesCandidato frmDetallesCandidato = new FrmDetallesCandidato();
             Hide();
             frmDetallesCandidato.ShowDialog();

@@ -256,15 +256,6 @@
       <DependentUpon>RRHHModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>RRHHModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="test.Designer.cs">
-      <DependentUpon>test.cs</DependentUpon>
-    </Compile>
     <Compile Include="Usuarios.cs">
       <DependentUpon>RRHHModel.tt</DependentUpon>
     </Compile>
@@ -339,13 +330,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
-    <EmbeddedResource Include="test.resx">
-      <DependentUpon>test.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\RRHHProyectoFinal.Test1TableAdapters.QueriesTableAdapter.datasource" />
-    <None Include="Properties\DataSources\test.datasource" />
-    <None Include="Properties\DataSources\Test1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

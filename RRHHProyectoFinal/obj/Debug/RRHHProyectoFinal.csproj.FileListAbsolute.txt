@@ -29,7 +29,6 @@ C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHPr
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.FrmAgregarCapacitaciones.resources
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.FrmAgregarDepartamentos.resources
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.FrmAgregarCompetencias.resources
-C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.test.resources
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.FrmNuevoCandidato.resources
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.FrmSeleccionCandidato.resources
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.FrmDetallesCandidato.resources
@@ -120,5 +119,4 @@ C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\bin\Debug\es\Mic
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.exe.config
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RdlCompile.cache
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RdlCompile.compiled
-C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.csprojAssemblyReference.cache
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.FrmReporte.resources

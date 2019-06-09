@@ -82,21 +82,21 @@ create table REL_Competencias_Candidatos(
 IdRel_Competencias_Candidatos int identity(1,1) not null,
 IdCandidato_Rel_Competencias_Candidatos int not null foreign key references Candidatos(IdCandidato),
 IdCompetencia_Rel_Competencias_Candidatos int not null foreign key references Competencias(IdCompetencia),
-primary key(IdCandidato_Rel_Competencias_Candidatos, IdCompetencia_Rel_Competencias_Candidatos )
+primary key(IdCandidato_Rel_Competencias_Candidatos, IdCompetencia_Rel_Competencias_Candidatos, IdRel_Competencias_Candidatos )
 );
 
 create table REL_Capacitaciones_Candidatos(
 IdRel_Capacitaciones_Candidatos int identity(1,1) not null,
 IdCandidato_Rel_Capacitaciones_Candidatos int not null foreign key references Candidatos(IdCandidato),
 IdCapacitacion_Rel_Capacitaciones_Candidatos int not null foreign key references Capacitaciones(IdCapacitacion),
-primary key(IdCandidato_Rel_Capacitaciones_Candidatos, IdCapacitacion_Rel_Capacitaciones_Candidatos)
+primary key(IdCandidato_Rel_Capacitaciones_Candidatos, IdCapacitacion_Rel_Capacitaciones_Candidatos, IdRel_Capacitaciones_Candidatos)
 );
 
 create table REL_Idioma_Candidatos(
 IdRel_Idiomas_Candidatos int identity(1,1) not null,
 IdCandidato_Rel_Idioma_Candidatos int not null foreign key references Candidatos(IdCandidato),
 IdIdioma_Rel_Idioma_Candidatos int not null foreign key references Idiomas(IdIdioma)
-primary key(IdCandidato_Rel_Idioma_Candidatos, IdIdioma_Rel_Idioma_Candidatos )
+primary key(IdCandidato_Rel_Idioma_Candidatos, IdIdioma_Rel_Idioma_Candidatos, IdRel_Idiomas_Candidatos )
 );
 
 create table Usuarios(

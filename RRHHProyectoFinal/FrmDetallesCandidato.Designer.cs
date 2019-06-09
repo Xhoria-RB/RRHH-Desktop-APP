@@ -46,37 +46,59 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DgvIdiomas = new System.Windows.Forms.DataGridView();
+            this.idiomasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rRHHDataSet = new RRHHProyectoFinal.RRHHDataSet();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.DgvCompetencias = new System.Windows.Forms.DataGridView();
+            this.competenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.DgvExpLaborales = new System.Windows.Forms.DataGridView();
+            this.expLaboralesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.DgvCapacitaciones = new System.Windows.Forms.DataGridView();
+            this.capacitacionesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.BtnContratar = new System.Windows.Forms.Button();
             this.CbxPuesto = new System.Windows.Forms.ComboBox();
-            this.puestosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rRHHDataSet = new RRHHProyectoFinal.RRHHDataSet();
             this.NudSalario = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.puestosTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.PuestosTableAdapter();
             this.BtnCancelar = new System.Windows.Forms.Button();
+            this.expLaboralesTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.ExpLaboralesTableAdapter();
+            this.label10 = new System.Windows.Forms.Label();
+            this.idiomasTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.IdiomasTableAdapter();
+            this.competenciasTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.CompetenciasTableAdapter();
+            this.capacitacionesTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.CapacitacionesTableAdapter();
+            this.rRHHDataSet1 = new RRHHProyectoFinal.RRHHDataSet();
+            this.puestosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.puestosTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.PuestosTableAdapter();
+            this.idExpLaboralDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPersonaExpLaboralDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empresaExpLaboralesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.puestoOcupadoExpLaboralesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaDesdeExpLaboralesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaHastaExpLaboralesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salarioExpLaboralesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvIdiomas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.idiomasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCompetencias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.competenciasBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvExpLaborales)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.expLaboralesBindingSource)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCapacitaciones)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.capacitacionesBindingSource)).BeginInit();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.puestosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NudSalario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puestosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -239,11 +261,21 @@
             this.DgvIdiomas.AllowUserToAddRows = false;
             this.DgvIdiomas.AllowUserToDeleteRows = false;
             this.DgvIdiomas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvIdiomas.Location = new System.Drawing.Point(7, 20);
+            this.DgvIdiomas.Location = new System.Drawing.Point(7, 23);
             this.DgvIdiomas.Name = "DgvIdiomas";
             this.DgvIdiomas.ReadOnly = true;
-            this.DgvIdiomas.Size = new System.Drawing.Size(433, 118);
+            this.DgvIdiomas.Size = new System.Drawing.Size(341, 115);
             this.DgvIdiomas.TabIndex = 0;
+            // 
+            // idiomasBindingSource
+            // 
+            this.idiomasBindingSource.DataMember = "Idiomas";
+            this.idiomasBindingSource.DataSource = this.rRHHDataSet;
+            // 
+            // rRHHDataSet
+            // 
+            this.rRHHDataSet.DataSetName = "RRHHDataSet";
+            this.rRHHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox3
             // 
@@ -261,11 +293,16 @@
             this.DgvCompetencias.AllowUserToAddRows = false;
             this.DgvCompetencias.AllowUserToDeleteRows = false;
             this.DgvCompetencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvCompetencias.Location = new System.Drawing.Point(6, 19);
+            this.DgvCompetencias.Location = new System.Drawing.Point(6, 23);
             this.DgvCompetencias.Name = "DgvCompetencias";
             this.DgvCompetencias.ReadOnly = true;
-            this.DgvCompetencias.Size = new System.Drawing.Size(433, 118);
+            this.DgvCompetencias.Size = new System.Drawing.Size(343, 114);
             this.DgvCompetencias.TabIndex = 1;
+            // 
+            // competenciasBindingSource
+            // 
+            this.competenciasBindingSource.DataMember = "Competencias";
+            this.competenciasBindingSource.DataSource = this.rRHHDataSet;
             // 
             // panel1
             // 
@@ -295,12 +332,27 @@
             // 
             this.DgvExpLaborales.AllowUserToAddRows = false;
             this.DgvExpLaborales.AllowUserToDeleteRows = false;
+            this.DgvExpLaborales.AutoGenerateColumns = false;
             this.DgvExpLaborales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvExpLaborales.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idExpLaboralDataGridViewTextBoxColumn,
+            this.idPersonaExpLaboralDataGridViewTextBoxColumn,
+            this.empresaExpLaboralesDataGridViewTextBoxColumn,
+            this.puestoOcupadoExpLaboralesDataGridViewTextBoxColumn,
+            this.fechaDesdeExpLaboralesDataGridViewTextBoxColumn,
+            this.fechaHastaExpLaboralesDataGridViewTextBoxColumn,
+            this.salarioExpLaboralesDataGridViewTextBoxColumn});
+            this.DgvExpLaborales.DataSource = this.expLaboralesBindingSource;
             this.DgvExpLaborales.Location = new System.Drawing.Point(10, 19);
             this.DgvExpLaborales.Name = "DgvExpLaborales";
             this.DgvExpLaborales.ReadOnly = true;
             this.DgvExpLaborales.Size = new System.Drawing.Size(399, 232);
             this.DgvExpLaborales.TabIndex = 3;
+            // 
+            // expLaboralesBindingSource
+            // 
+            this.expLaboralesBindingSource.DataMember = "ExpLaborales";
+            this.expLaboralesBindingSource.DataSource = this.rRHHDataSet;
             // 
             // groupBox4
             // 
@@ -323,6 +375,11 @@
             this.DgvCapacitaciones.ReadOnly = true;
             this.DgvCapacitaciones.Size = new System.Drawing.Size(428, 232);
             this.DgvCapacitaciones.TabIndex = 2;
+            // 
+            // capacitacionesBindingSource
+            // 
+            this.capacitacionesBindingSource.DataMember = "Capacitaciones";
+            this.capacitacionesBindingSource.DataSource = this.rRHHDataSet;
             // 
             // groupBox6
             // 
@@ -359,16 +416,6 @@
             this.CbxPuesto.Size = new System.Drawing.Size(161, 26);
             this.CbxPuesto.TabIndex = 18;
             this.CbxPuesto.ValueMember = "IdPuesto";
-            // 
-            // puestosBindingSource
-            // 
-            this.puestosBindingSource.DataMember = "Puestos";
-            this.puestosBindingSource.DataSource = this.rRHHDataSet;
-            // 
-            // rRHHDataSet
-            // 
-            this.rRHHDataSet.DataSetName = "RRHHDataSet";
-            this.rRHHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // NudSalario
             // 
@@ -417,10 +464,6 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Salario:";
             // 
-            // puestosTableAdapter
-            // 
-            this.puestosTableAdapter.ClearBeforeFill = true;
-            // 
             // BtnCancelar
             // 
             this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -432,11 +475,101 @@
             this.BtnCancelar.UseVisualStyleBackColor = true;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
+            // expLaboralesTableAdapter
+            // 
+            this.expLaboralesTableAdapter.ClearBeforeFill = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(474, 647);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 13);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "label10";
+            // 
+            // idiomasTableAdapter
+            // 
+            this.idiomasTableAdapter.ClearBeforeFill = true;
+            // 
+            // competenciasTableAdapter
+            // 
+            this.competenciasTableAdapter.ClearBeforeFill = true;
+            // 
+            // capacitacionesTableAdapter
+            // 
+            this.capacitacionesTableAdapter.ClearBeforeFill = true;
+            // 
+            // rRHHDataSet1
+            // 
+            this.rRHHDataSet1.DataSetName = "RRHHDataSet";
+            this.rRHHDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // puestosBindingSource
+            // 
+            this.puestosBindingSource.DataMember = "Puestos";
+            this.puestosBindingSource.DataSource = this.rRHHDataSet1;
+            // 
+            // puestosTableAdapter
+            // 
+            this.puestosTableAdapter.ClearBeforeFill = true;
+            // 
+            // idExpLaboralDataGridViewTextBoxColumn
+            // 
+            this.idExpLaboralDataGridViewTextBoxColumn.DataPropertyName = "IdExpLaboral";
+            this.idExpLaboralDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.idExpLaboralDataGridViewTextBoxColumn.Name = "idExpLaboralDataGridViewTextBoxColumn";
+            this.idExpLaboralDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idPersonaExpLaboralDataGridViewTextBoxColumn
+            // 
+            this.idPersonaExpLaboralDataGridViewTextBoxColumn.DataPropertyName = "IdPersona_ExpLaboral";
+            this.idPersonaExpLaboralDataGridViewTextBoxColumn.HeaderText = "IdPersona_ExpLaboral";
+            this.idPersonaExpLaboralDataGridViewTextBoxColumn.Name = "idPersonaExpLaboralDataGridViewTextBoxColumn";
+            this.idPersonaExpLaboralDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idPersonaExpLaboralDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // empresaExpLaboralesDataGridViewTextBoxColumn
+            // 
+            this.empresaExpLaboralesDataGridViewTextBoxColumn.DataPropertyName = "Empresa_ExpLaborales";
+            this.empresaExpLaboralesDataGridViewTextBoxColumn.HeaderText = "Empresa";
+            this.empresaExpLaboralesDataGridViewTextBoxColumn.Name = "empresaExpLaboralesDataGridViewTextBoxColumn";
+            this.empresaExpLaboralesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // puestoOcupadoExpLaboralesDataGridViewTextBoxColumn
+            // 
+            this.puestoOcupadoExpLaboralesDataGridViewTextBoxColumn.DataPropertyName = "PuestoOcupado_ExpLaborales";
+            this.puestoOcupadoExpLaboralesDataGridViewTextBoxColumn.HeaderText = "Puesto Ocupado";
+            this.puestoOcupadoExpLaboralesDataGridViewTextBoxColumn.Name = "puestoOcupadoExpLaboralesDataGridViewTextBoxColumn";
+            this.puestoOcupadoExpLaboralesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaDesdeExpLaboralesDataGridViewTextBoxColumn
+            // 
+            this.fechaDesdeExpLaboralesDataGridViewTextBoxColumn.DataPropertyName = "FechaDesde_ExpLaborales";
+            this.fechaDesdeExpLaboralesDataGridViewTextBoxColumn.HeaderText = "Desde";
+            this.fechaDesdeExpLaboralesDataGridViewTextBoxColumn.Name = "fechaDesdeExpLaboralesDataGridViewTextBoxColumn";
+            this.fechaDesdeExpLaboralesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaHastaExpLaboralesDataGridViewTextBoxColumn
+            // 
+            this.fechaHastaExpLaboralesDataGridViewTextBoxColumn.DataPropertyName = "FechaHasta_ExpLaborales";
+            this.fechaHastaExpLaboralesDataGridViewTextBoxColumn.HeaderText = "Hasta";
+            this.fechaHastaExpLaboralesDataGridViewTextBoxColumn.Name = "fechaHastaExpLaboralesDataGridViewTextBoxColumn";
+            this.fechaHastaExpLaboralesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // salarioExpLaboralesDataGridViewTextBoxColumn
+            // 
+            this.salarioExpLaboralesDataGridViewTextBoxColumn.DataPropertyName = "Salario_ExpLaborales";
+            this.salarioExpLaboralesDataGridViewTextBoxColumn.HeaderText = "Salario";
+            this.salarioExpLaboralesDataGridViewTextBoxColumn.Name = "salarioExpLaboralesDataGridViewTextBoxColumn";
+            this.salarioExpLaboralesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // FrmDetallesCandidato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 734);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.panel1);
@@ -448,19 +581,25 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvIdiomas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.idiomasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvCompetencias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.competenciasBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvExpLaborales)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.expLaboralesBindingSource)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvCapacitaciones)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.capacitacionesBindingSource)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.puestosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NudSalario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puestosBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -496,9 +635,26 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private RRHHDataSet rRHHDataSet;
-        private System.Windows.Forms.BindingSource puestosBindingSource;
-        private RRHHDataSetTableAdapters.PuestosTableAdapter puestosTableAdapter;
         private System.Windows.Forms.Button BtnContratar;
         private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.BindingSource expLaboralesBindingSource;
+        private RRHHDataSetTableAdapters.ExpLaboralesTableAdapter expLaboralesTableAdapter;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.BindingSource idiomasBindingSource;
+        private RRHHDataSetTableAdapters.IdiomasTableAdapter idiomasTableAdapter;
+        private System.Windows.Forms.BindingSource competenciasBindingSource;
+        private RRHHDataSetTableAdapters.CompetenciasTableAdapter competenciasTableAdapter;
+        private System.Windows.Forms.BindingSource capacitacionesBindingSource;
+        private RRHHDataSetTableAdapters.CapacitacionesTableAdapter capacitacionesTableAdapter;
+        private RRHHDataSet rRHHDataSet1;
+        private System.Windows.Forms.BindingSource puestosBindingSource;
+        private RRHHDataSetTableAdapters.PuestosTableAdapter puestosTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idExpLaboralDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idPersonaExpLaboralDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empresaExpLaboralesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn puestoOcupadoExpLaboralesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDesdeExpLaboralesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaHastaExpLaboralesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salarioExpLaboralesDataGridViewTextBoxColumn;
     }
 }

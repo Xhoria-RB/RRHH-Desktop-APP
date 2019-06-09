@@ -22,8 +22,8 @@ namespace RRHHProyectoFinal
 
         private void FrmDetallesCandidato_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'rRHHDataSet.Puestos' Puede moverla o quitarla según sea necesario.
-            this.puestosTableAdapter.Fill(this.rRHHDataSet.Puestos);
+            // TODO: esta línea de código carga datos en la tabla 'rRHHDataSet1.Puestos' Puede moverla o quitarla según sea necesario.
+            this.puestosTableAdapter.Fill(this.rRHHDataSet1.Puestos);
             CbxPuesto.SelectedIndex = 0;
             LoadData();
 
@@ -32,9 +32,9 @@ namespace RRHHProyectoFinal
         public void LoadData()
         {
             int idCandidato = Global.GlobalCandidatoID;
-            var persona = entities.Personas.Where(p => p.IdPersona.Equals(idCandidato)).FirstOrDefault();
             var candidato = entities.Candidatos.Where(p => p.IdCandidato.Equals(idCandidato)).FirstOrDefault();
-            idPersona = persona.IdPersona;
+            idPersona = candidato.IdPersona_Candidatos;
+            var persona = entities.Personas.Where(p => p.IdPersona.Equals(idPersona)).FirstOrDefault();
             var listaCapacitaciones = from capacitaciones in entities.Capacitaciones
                                       join relCapacitaciones in entities.REL_Capacitaciones_Candidatos
                                       on capacitaciones.IdCapacitacion equals relCapacitaciones.IdCapacitacion_Rel_Capacitaciones_Candidatos
@@ -77,7 +77,6 @@ namespace RRHHProyectoFinal
             TxtSalarioAsp.Text = candidato.SalarioAspirado_Candidatos.ToString();
             TxtRecomendacion.Text = candidato.Recomendacion_Candidatos;
 
-
             DgvCapacitaciones.DataSource = listaCapacitaciones.ToList();
             DgvCapacitaciones.Refresh();
             DgvCompetencias.DataSource = listaCompetencias.ToList();
@@ -99,32 +98,39 @@ namespace RRHHProyectoFinal
             if (salario < puesto.SalarioMinimo_Puestos || salario > puesto.SalarioMaximo_Puestos)
             {
                 MessageBox.Show("El salario no puede estar por debajo ni por encima del establecido en el puesto\n" +
-                    "Salario minimo: "+ puesto.SalarioMinimo_Puestos.ToString() + 
+                    "Salario minimo: " + puesto.SalarioMinimo_Puestos.ToString() +
                     " Salario maximo: " + puesto.SalarioMaximo_Puestos.ToString());
+
             }
-
-            try
+            else
             {
-
-                entities.Empleados.Add(new Empleados
+                try
                 {
-                    IdPersona_Empleados = idPersona,
-                    IdPuesto_Empleados = idPersona,
-                    Salario_Empleados = salario,
-                    FechaIngreso_Empleados = DateTime.Now,
-                    Estado_Empleados = true
-                });
-                var candidato = entities.Candidatos.Where(p => p.IdCandidato.Equals(idCandidato)).FirstOrDefault();
-                candidato.Estado_Candidatos = false;
 
-                entities.SaveChanges();
-                MessageBox.Show("Registro guardado exitosamente!!");
-                Dispose();
+                    entities.Empleados.Add(new Empleados
+                    {
+                        IdPersona_Empleados = idPersona,
+                        IdPuesto_Empleados = idPersona,
+                        Salario_Empleados = salario,
+                        FechaIngreso_Empleados = DateTime.Now,
+                        Estado_Empleados = true
+                    });
+                    var candidato = entities.Candidatos.Where(p => p.IdCandidato.Equals(idCandidato)).FirstOrDefault();
+                    candidato.Estado_Candidatos = false;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
+                    var usuario = entities.Usuarios.Where(p => p.IdPersona_Usuarios.Equals(idPersona)).FirstOrDefault();
+                    usuario.Roles_Usuarios = "RRHH";
+
+                    entities.SaveChanges();
+                    MessageBox.Show("Registro guardado exitosamente!!");
+                    Dispose();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+
             }
 
         }

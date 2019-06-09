@@ -28,18 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.DgvSeleccionCandidatos = new System.Windows.Forms.DataGridView();
+            this.candidatosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rRHHDataSet = new RRHHProyectoFinal.RRHHDataSet();
             this.BtnDetalles = new System.Windows.Forms.Button();
             this.BtnCerrar = new System.Windows.Forms.Button();
+            this.candidatosTableAdapter = new RRHHProyectoFinal.RRHHDataSetTableAdapters.CandidatosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvSeleccionCandidatos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candidatosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -104,6 +110,16 @@
             this.DgvSeleccionCandidatos.Size = new System.Drawing.Size(706, 477);
             this.DgvSeleccionCandidatos.TabIndex = 0;
             // 
+            // candidatosBindingSource
+            // 
+            this.candidatosBindingSource.DataMember = "Candidatos";
+            this.candidatosBindingSource.DataSource = this.rRHHDataSet;
+            // 
+            // rRHHDataSet
+            // 
+            this.rRHHDataSet.DataSetName = "RRHHDataSet";
+            this.rRHHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // BtnDetalles
             // 
             this.BtnDetalles.Location = new System.Drawing.Point(16, 615);
@@ -124,6 +140,10 @@
             this.BtnCerrar.UseVisualStyleBackColor = true;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
+            // candidatosTableAdapter
+            // 
+            this.candidatosTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmSeleccionCandidato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,6 +162,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvSeleccionCandidatos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candidatosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rRHHDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,5 +176,8 @@
         private System.Windows.Forms.Button BtnDetalles;
         private System.Windows.Forms.Button BtnCerrar;
         private System.Windows.Forms.Label label1;
+        private RRHHDataSet rRHHDataSet;
+        private System.Windows.Forms.BindingSource candidatosBindingSource;
+        private RRHHDataSetTableAdapters.CandidatosTableAdapter candidatosTableAdapter;
     }
 }
