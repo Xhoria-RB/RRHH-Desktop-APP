@@ -77,6 +77,7 @@
             // 
             // CbxNivelRiesgo
             // 
+            this.CbxNivelRiesgo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxNivelRiesgo.FormattingEnabled = true;
             this.CbxNivelRiesgo.Items.AddRange(new object[] {
             "Bajo",
@@ -147,6 +148,7 @@
             // 
             // CbxDepartamento
             // 
+            this.CbxDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxDepartamento.FormattingEnabled = true;
             this.CbxDepartamento.Location = new System.Drawing.Point(376, 56);
             this.CbxDepartamento.Name = "CbxDepartamento";

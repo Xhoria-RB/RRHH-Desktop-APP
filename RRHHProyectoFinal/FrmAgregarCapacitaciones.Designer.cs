@@ -93,6 +93,7 @@
             // 
             // CbxNivel
             // 
+            this.CbxNivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxNivel.FormattingEnabled = true;
             this.CbxNivel.Items.AddRange(new object[] {
             "Grado",

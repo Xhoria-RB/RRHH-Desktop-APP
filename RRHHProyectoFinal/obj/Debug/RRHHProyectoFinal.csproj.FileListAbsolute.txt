@@ -120,3 +120,4 @@ C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHPr
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RdlCompile.cache
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RdlCompile.compiled
 C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.FrmReporte.resources
+C:\Users\rabs_\source\repos\RRHHProyectoFinal\RRHHProyectoFinal\obj\Debug\RRHHProyectoFinal.csprojAssemblyReference.cache
